@@ -42,9 +42,9 @@ echo '
         <div id="metanavigation">';
 tpl_link(wl(),'HOME','name="dokuwiki__top" id="dokuwiki__top"');
 echo ' | ';
-tpl_link($DOKU_URL.':impressum', tpl_getLang('imprint'));
+tpl_link($DOKU_URL.'imprint', tpl_getLang('imprint'));
 echo ' | ';
-tpl_link($DOKU_URL.':sitemap', 'SITEMAP');
+tpl_link($DOKU_URL.'sitemap', 'SITEMAP');
 echo ' | ';
 tpl_link('http://www.kit.edu/', 'KIT');
 echo ' | ';
