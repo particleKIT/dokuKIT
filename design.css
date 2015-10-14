@@ -38,10 +38,7 @@
 
 
 .plugin_translation {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding-top: 1px;
+    display:inline-block;
     text-align:right;
 }
 
