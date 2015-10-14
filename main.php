@@ -38,14 +38,18 @@ echo '
     <div id="wrapper">
 ';
 html_msgarea();
-
-
 echo '
-        <div id="metanavigation"><a accesskey="1" href="/index.php">Home</a>&nbsp;|&nbsp;<a accesskey="8" href="/impressum.php">Impressum</a>&nbsp;|&nbsp;<a accesskey="3" href="/sitemap.php">Sitemap</a>&nbsp;|&nbsp;<a href="http://www.kit.edu">KIT</a> | ';
+        <div id="metanavigation">';
+tpl_link(wl(),'HOME','name="dokuwiki__top" id="dokuwiki__top"');
+echo ' | ';
+tpl_link($DOKU_URL.':impressum', tpl_getLang('imprint'));
+echo ' | ';
+tpl_link($DOKU_URL.':sitemap', 'SITEMAP');
+echo ' | ';
+tpl_link('http://www.kit.edu/', 'KIT');
+echo ' | ';
 
-
-
-if($ACT != 'login' && $ACT != 'logout') tpl_button('login');
+//if($ACT != 'login' && $ACT != 'logout') tpl_button('login');
 tpl_button('admin');
 if($_SERVER['REMOTE_USER']) tpl_button('profile');
 
