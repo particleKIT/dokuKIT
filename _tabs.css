@@ -1,0 +1,50 @@
+
+div#wrapper ul.tabs {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+div#wrapper ul.tabs li {
+    float: left;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+[dir=rtl] div#wrapper ul.tabs li {
+    float: right;
+}
+
+div#wrapper ul.tabs li strong,
+div#wrapper ul.tabs li a {
+    float: left;
+    padding: .3em .8em;
+    margin: 0 .3em 0 0;
+    background-color: __background_neu__;
+    color: __text__;
+    border-radius: .5em .5em 0 0;
+}
+[dir=rtl] div#wrapper ul.tabs li strong,
+[dir=rtl] div#wrapper ul.tabs li a {
+    float: right;
+    margin: 0 0 0 .3em;
+}
+*+html[dir=rtl] div#wrapper ul.tabs li strong,
+*+html[dir=rtl] div#wrapper ul.tabs li a {
+    float: none;
+    display: inline-block;
+}
+div#wrapper ul.tabs li strong {
+    font-weight: normal;
+}
+
+div#wrapper ul.tabs li a:link,
+div#wrapper ul.tabs li a:visited {
+}
+div#wrapper ul.tabs li a:hover,
+div#wrapper ul.tabs li a:active,
+div#wrapper ul.tabs li a:focus,
+div#wrapper ul.tabs li strong {
+    background-color: __background_other__;
+    color: __text__;
+    text-decoration: none;
+}

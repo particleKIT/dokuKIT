@@ -1,0 +1,7 @@
+base     dokukit
+author   Martin Gabelmann
+email    Martin.Gabelmann@kit.edu
+date     2015-14-10
+name     DokuKIT Template
+desc     Official KIT-Design, based on DokuCMS Template
+url      https://github.com/particleKIT/dokuKIT
