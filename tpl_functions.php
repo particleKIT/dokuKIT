@@ -136,7 +136,7 @@ function p_index_xhtml($ns) {
 	      }
 			}
     }
-    if($item['id'] == 'sidebar' or $item['id'] == $start or preg_match('/:'.$start.'$/',$item['id']) or $conf['hidepages'] == $item['id']) {
+    if($item['id'] == 'sidebar' or $item['id'] == $start or preg_match('/:'.$start.'$/',$item['id']) or preg_match('/'.$conf['hidepages'].'$/',$item['id']) ) {
       unset($data[$i]);
     }
     $i++;
