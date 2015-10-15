@@ -47,7 +47,6 @@ echo ' | ';
 tpl_link($DOKU_URL.'sitemap', 'SITEMAP');
 echo ' | ';
 tpl_link('http://www.kit.edu/', 'KIT');
-echo ' | ';
 
 //if($ACT != 'login' && $ACT != 'logout') tpl_button('login');
 tpl_button('admin');

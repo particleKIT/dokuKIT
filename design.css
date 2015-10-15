@@ -58,17 +58,21 @@
 }
 
 .plugin_translation ul li a {
-    color: __text__;
+    color: #4D4D4D;
     display: inline-block;
     min-height: 16px;
 }
 
-.plugin_translation a.wikilink1 {
-    color: __text__ !important;
-    border-bottom:none !important;
+.plugin_translation a.wikilink2 {
+    visibility: hidden !important;
+    width: 0px;
 }
 
-
+.plugin_translation .li a.wikilink1:before {
+    color: #4D4D4D;
+    content: "|";
+    padding-right: 3px;
+}
 
 form {
     display:inline;
