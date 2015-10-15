@@ -46,3 +46,28 @@ div#wrapper ul.admin_tasks li.admin_revert {
 div#wrapper ul.admin_tasks li.admin_popularity {
     background-image: url(../../images/admin/popularity.png);
 }
+
+#config__manager tr .input, 
+#config__manager tr.default .input {
+    background-color: inherit;
+    display: inline;
+}
+
+#config__manager tr.default input,
+#config__manager tr.default select { 
+    background-color: #FFF;
+    border: 1px solid #B3B3B3;
+    margin: 1px;
+}
+
+#config__manager tr input,
+#config__manager tr textarea,
+#config__manager tr select { 
+    background-color: #FFF;
+    border: 1px solid #B3B3B3;
+    margin: 1px;
+}
+
+#config__manager .selectiondefault {
+    background-color: transparent;
+}
