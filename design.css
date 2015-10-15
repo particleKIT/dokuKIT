@@ -77,7 +77,6 @@
 form {
     display:inline;
     margin:0;
-    padding-right:18px;
     display:inline;
 }
 
@@ -150,7 +149,6 @@ div#wrapper {
 }
 /* Metanavigation */
 div#metanavigation {
-    color:#B3B3B3;
     padding-right:19px;
     position:absolute;
     z-index:2;
@@ -158,12 +156,32 @@ div#metanavigation {
     height:2.5455em;
     line-height:2.5455em;
     text-align:right;
-    width:980px;}
-div#metanavigation a:link,div#metanavigation a:active,div#metanavigation a:visited .btn_login button,.btn_logout button {
+    width:980px;
+}
+
+div#metanavigation a:link,
+div#metanavigation a:active,
+div#metanavigation a:visited,
+div#metanavigation .btn_admin button,
+div#metanavigation .btn_profile button,
+div#metanavigation .btn_login button,
+div#metanavigation .btn_logout button {
     color:#4D4D4D;
     text-decoration:none;
     text-transform:uppercase;
 }
+
+div#metanavigation a + a:before,
+div#metanavigation .btn_admin button:before, 
+div#metanavigation .btn_profile button:before, 
+div#metanavigation .btn_login button:before,
+div#metanavigation .btn_logout button:before {
+    color: #4D4D4D;
+    content: "|";
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
 div#metanavigation a:hover .btn_login button,.btn_logout button {
     text-decoration:underline;
 }
@@ -2020,7 +2038,10 @@ div#suchen button {
     cursor: pointer;
 }
 
-.btn_login button, .btn_logout button  {
+.btn_admin button, 
+.btn_profile button, 
+.btn_login button, 
+.btn_logout button  {
     background:none!important;
     border:none; 
     padding:0!important;

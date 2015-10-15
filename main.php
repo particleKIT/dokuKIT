@@ -41,11 +41,8 @@ html_msgarea();
 echo '
         <div id="metanavigation">';
 tpl_link(wl(),'HOME','name="dokuwiki__top" id="dokuwiki__top"');
-echo ' | ';
 tpl_link($DOKU_URL.'imprint', tpl_getLang('imprint'));
-echo ' | ';
 tpl_link($DOKU_URL.'sitemap', 'SITEMAP');
-echo ' | ';
 tpl_link('http://www.kit.edu/', 'KIT');
 
 //if($ACT != 'login' && $ACT != 'logout') tpl_button('login');
