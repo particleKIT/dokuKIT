@@ -3169,8 +3169,7 @@ code {
 /* --------- buttons ------------------- */
 
 
-input.button,
-button.button {
+button {
   border: 1px solid __border__;
   color: __text_alt__;
   background-color: __background__;
@@ -3183,32 +3182,13 @@ button.button {
   padding: 0.125em 0.4em;
 }
 
-/* nice alphatransparency background except for IE <7 */
-html>body input.button,
-html>body button.button {
-  background:  __background__ url(images/buttonshadow.png) repeat-x bottom;
-}
-
-* html input.button,
-* html button.button {
-  height: 1.5em;
-}
-
-div.secedit input.button {
-  border: 1px solid __border__;
-  color: __text__;
-  background-color: __background__;
-  vertical-align: middle;
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-  font-size: 10px;
-  cursor: pointer;
+div.secedit {
   float: right;
   display: inline;
 }
 
-input#qsearch__in {
-  font-size: 0.825em;
+/* highlight corresb. section  */
+div.section_highlight {
+   background-color: #D9EFEC;
 }
 
