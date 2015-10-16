@@ -3192,3 +3192,11 @@ div.section_highlight {
    background-color: #D9EFEC;
 }
 
+
+div.site_tools {
+   background-color: #E5E5E5;
+   float: right;
+   padding-right: 12px;
+   padding-left: 4px;
+   padding-bottom: 4px;
+}

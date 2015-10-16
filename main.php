@@ -117,8 +117,25 @@ if($conf['tpl']['dokukit']['showsearch']) {
         <br/>
     </div>
 
-    <div id="right-row"></div>
-    <div id="middle-row">
+    <div id="right-row"></div>';
+
+
+if($_SERVER['REMOTE_USER']){
+echo '
+     <div class="site_tools">';
+  tpl_button('subscribe');
+  tpl_button('history');
+  tpl_button('revert');
+
+  if($ACT != 'login' && $ACT != 'logout'){
+    tpl_button('media');
+    tpl_button('edit');
+  }
+echo '
+      </div>';
+}
+
+echo '    <div id="middle-row">
         <div id="content">';
   tpl_content(); 
 } else {
@@ -160,24 +177,7 @@ echo '                   </span>
                     </div>
 ';
 
-if($_SERVER['REMOTE_USER']){
-  tpl_button('subscribe');
-  tpl_button('history');
-  tpl_button('revert');
-}
 
-if($conf['tpl']['dokukit']['showbacklinks']) tpl_button('backlink');
-
-if(!$_SERVER['REMOTE_USER'] && $ACT != 'login' && $ACT != 'logout'){ 
-  if($conf['tpl']['dokukit']['showmedia']) {   
-    tpl_button('media');
-  }
-} else {
-  if($ACT != 'login' && $ACT != 'logout'){
-    tpl_button('media');
-    tpl_button('edit');
-  }
-}
 #tpl_license(false);
 /* provide DokuWiki housekeeping, required in all templates */ 
 tpl_indexerWebBug();
