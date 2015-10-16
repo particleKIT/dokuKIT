@@ -3200,3 +3200,49 @@ div.site_tools {
    padding-left: 4px;
    padding-bottom: 4px;
 }
+
+/* hide-plugin integration*/
+
+div.hiddenHead {
+    background-color: #B3B3B3;
+    font-weight: bold;
+    padding-left: 6px;
+    font-size: 100%;
+}
+
+div.hiddenGlobal {
+    border:  thick none !important;
+}
+
+div.hiddenHead {
+    font-weight: bold;
+}
+
+div.hiddenBody {
+    border-top: none;
+    padding: 0px;
+}
+
+div.hiddenGlobal:not(.hiddenHidden) > div.hiddenHead p::after, 
+div.hiddenGlobal.hiddenHidden > div.hiddenHead p::after {
+    background-image: none !important;
+}
+
+div.hiddenGlobal:not(.hiddenHidden) > div.hiddenHead p::before {
+    background-image: url("/projects/itp/lib/plugins/hidden/images/shrink2.png");
+}
+
+div.hiddenGlobal.hiddenHidden > div.hiddenHead p::before {
+    background-image: url("/projects/itp/lib/plugins/hidden/images/enlarge2.png");
+}
+
+div.hiddenHead p::before, 
+div.hiddenHead p::before {
+    display: inline-block;
+    background-size: 1.2em 1.2em;
+    width: 1.2em;
+    height: 1.2em;
+    content: "";
+}
+
+
