@@ -136,11 +136,18 @@ function p_index_xhtml($ns) {
 	      }
 			}
     }
-    if($item['id'] == 'sidebar' or $item['id'] == $start or preg_match('/:'.$start.'$/',$item['id']) or preg_match('/'.$conf['hidepages'].'$/',$item['id']) ) {
-      unset($data[$i]);
+    if(
+        $item['id'] == 'sidebar' or 
+        $item['id'] == $start or
+        preg_match('/:'.$start.'$/',$item['id']) or 
+        !empty($conf['hidepages']) and preg_match('/'.$conf['hidepages'].'$/',$item['id'])
+    ) {
+        unset($data[$i]);
     }
+    
     $i++;
-  }  
+    
+    }  
 # echo index with empty items removed  
   echo html_buildlist($data,'idx','_html_list_index','html_li_index');
 }
