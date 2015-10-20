@@ -45,13 +45,13 @@ tpl_link($DOKU_URL.'imprint', tpl_getLang('imprint'));
 tpl_link($DOKU_URL.'sitemap', 'SITEMAP');
 tpl_link('http://www.kit.edu/', 'KIT');
 
-//if($ACT != 'login' && $ACT != 'logout') tpl_button('login');
 tpl_button('admin');
 if($_SERVER['REMOTE_USER']) tpl_button('profile');
 
 $translation = plugin_load('helper','translation');
 if ($translation) echo $translation->showTranslations();
 
+if($ACT != 'login' && $ACT != 'logout' && $_SERVER['REMOTE_USER']) tpl_button('login');
 
 echo '
         </div>
