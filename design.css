@@ -50,14 +50,13 @@
     background-color: transparent;
     border: none;
 }
-.plugin_translation ul li {
+.plugin_translation li {
     margin: 0;
-    padding: 0 2px;
     display: inline-block;
     font-size: 85%;
 }
 
-.plugin_translation ul li a {
+.plugin_translation a {
     color: #4D4D4D;
     display: inline-block;
     min-height: 16px;
@@ -70,9 +69,10 @@
 
 .plugin_translation .li a.wikilink1:before {
     color: #4D4D4D;
-    content: "|";
-    padding-right: 3px;
+    content: " | ";
+    padding-left: 3px;
 }
+
 
 form {
     display:inline;
@@ -177,9 +177,7 @@ div#metanavigation .btn_profile button:before,
 div#metanavigation .btn_login button:before,
 div#metanavigation .btn_logout button:before {
     color: #4D4D4D;
-    content: "|";
-    padding-right: 3px;
-    padding-left: 3px;
+    content: " | ";
 }
 
 div#metanavigation a:hover .btn_login button,.btn_logout button {
@@ -3173,7 +3171,6 @@ button {
   border: 1px solid __border__;
   color: __text_alt__;
   background-color: __background__;
-  vertical-align: middle;
   text-decoration: none;
   font-weight: bold;
   font-size: 0.8em;
