@@ -29,6 +29,7 @@ function _tpl_sidebar() {
         if($ns_sb && auth_quickaclcheck($ns_sb) >= AUTH_READ) {
             echo '<div class="sidebar_box">', DOKU_LF;
             echo p_sidebar_xhtml($ns_sb), DOKU_LF;
+            
             echo '</div>', DOKU_LF;
          } elseif(@file_exists(wikiFN($pname)) && auth_quickaclcheck($pname) >= AUTH_READ) {
             echo '<div class="sidebar_box">', DOKU_LF;
@@ -43,7 +44,22 @@ function _tpl_sidebar() {
     			echo '<div class="sidebar_box">', DOKU_LF;
     			echo '  ', p_index_xhtml($ID), DOKU_LF;
     			echo '</div>', DOKU_LF;
-	 }	
+	 }
+   
+   if(
+      $conf['tpl'][$tpl]['showextlinks']== '1' && 
+      @file_exists(wikiFN($conf['tpl'][$tpl]['extlinks'])) && 
+      auth_quickaclcheck($conf['tpl'][$tpl]['extlinks']) >= AUTH_READ 
+     )  
+    {
+   
+        echo '<div class="sidebar_box">', DOKU_LF;
+        echo p_sidebar_xhtml($conf['tpl'][$tpl]['extlinks']), DOKU_LF;
+        echo '</div>', DOKU_LF;
+
+
+    }	
+
 }
 
 /**
@@ -140,7 +156,8 @@ function p_index_xhtml($ns) {
         $item['id'] == 'sidebar' or 
         $item['id'] == $start or
         preg_match('/:'.$start.'$/',$item['id']) or 
-        !empty($conf['hidepages']) and preg_match('/'.$conf['hidepages'].'$/',$item['id'])
+        !empty($conf['hidepages']) and preg_match('/'.$conf['hidepages'].'$/',$item['id']) or
+        $item['id'] == $conf['tpl']['dokukit']['extlinks']
     ) {
         unset($data[$i]);
     }

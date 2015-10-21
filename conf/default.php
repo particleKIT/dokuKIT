@@ -14,4 +14,6 @@ $conf['tpl']['dokukit']['showsearch'] = 1;  // 1 or 0
 $conf['tpl']['dokukit']['showbacklinks'] = 0;  // 1 or 0
 $conf['tpl']['dokukit']['showmedia'] = 0;  // 1 or 0
 $conf['tpl']['dokukit']['sidebaredit'] = 1; // 1 or 0 
+$conf['tpl']['dokukit']['showextlinks'] = 1; // 1 or 0 
+$conf['tpl']['dokukit']['extlinks'] = 'extlinks'; //filename 
 ?>

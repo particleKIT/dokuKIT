@@ -14,4 +14,5 @@ $lang['showbacklinks'] = 'Backlink-Knopf anzeigen';
 $lang['showmedia'] = 'Mediamanager-Button anzeigen, wenn nicht angemeldet';
 $lang['sidebaredit'] = 'Edit-Button im Sidebar anzeigen';
 $lang['imprint'] = 'IMPRESSUM';
+$lang['extlinks'] = 'Externe links in Sidebar anzeigen';
 ?>
