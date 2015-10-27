@@ -62,7 +62,7 @@ echo '
     <div id="head">
         <div id="logo">
             <a href="http://www.kit.edu" title="KIT-Logo - Link zur KIT-Startseite">
-                <img src="lib/tpl/dokukit/images/kit_logo_V2_de.png" alt="KIT-Logo - Link zur KIT-Startseite">
+                <img src="/lib/tpl/dokukit/images/kit_logo_V2_de.png" alt="KIT-Logo - Link zur KIT-Startseite">
             </a>
         </div>
         <div id="head-image" >
