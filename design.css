@@ -1033,6 +1033,7 @@ div#suchen button {
   float: right;
   width: 17em;
   font-size: 80%;
+  padding-top:35px;
 }
 
 #dw__toc h3 {
