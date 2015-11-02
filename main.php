@@ -1,10 +1,9 @@
 <?php
 /**
- * DokuWiki DokuCMS Template
+ * DokuWiki DokuKIT Template, based on DokuCMS
  *
- * @link   http://wiki.splitbrain.org/wiki:tpl:templates
- * @author Andreas Gohr <andi@splitbrain.org>
- * @author Klaus Vormweg <klaus.vormweg@gmx.de>
+ * @link  https://github.com/particleKIT/dokuKIT
+ * @author Martin Gabelmann <martin@gabelmann.biz> 
  */
 
 // must be run from within DokuWiki
@@ -41,8 +40,8 @@ html_msgarea();
 echo '
         <div id="metanavigation">';
 tpl_link(wl(),'HOME','name="dokuwiki__top" id="dokuwiki__top"');
-tpl_link($DOKU_URL.'imprint', tpl_getLang('imprint'));
-tpl_link($DOKU_URL.'sitemap', 'SITEMAP');
+tpl_link(DOKU_URL.'imprint', tpl_getLang('imprint'));
+tpl_link(DOKU_URL.'sitemap', 'SITEMAP');
 tpl_link('http://www.kit.edu/', 'KIT');
 
 $translation = plugin_load('helper','translation');
@@ -62,7 +61,7 @@ echo '
     <div id="head">
         <div id="logo">
             <a href="http://www.kit.edu" title="KIT-Logo - Link zur KIT-Startseite">
-                <img src="/lib/tpl/dokukit/images/kit_logo_V2_de.png" alt="KIT-Logo - Link zur KIT-Startseite">
+                <img src="'.DOKU_URL.'/lib/tpl/dokukit/images/kit_logo_V2_de.png" alt="KIT-Logo - Link zur KIT-Startseite">
             </a>
         </div>
         <div id="head-image" >

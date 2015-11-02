@@ -26,7 +26,7 @@ sup, sub {
     font-size: 0.8em;
 }
 body {
-    background:#ffffff url(images/bg_body_V2.jpg) center 120px no-repeat;
+    background:__background_image__;
     color:#000000;
     font-size:.6875em;
     line-height:1em;
@@ -39,7 +39,7 @@ html>/**/body {
 
 /* Farben der allgemeinen Links */
 a:link,a:active,a:visited {
-    color:#009682;
+    color:__existing__;
     text-decoration:none;
 }
 a:hover {
@@ -47,7 +47,7 @@ a:hover {
 }
 /* Wrapper */
 div#wrapper {
-    background:url(images/bg_wrapper2_V2.png) 0 0 repeat-y;
+    background:__wrapper__;
     width: 1015px;
     height:auto !important;
     min-height: 100%; 
@@ -56,7 +56,7 @@ div#wrapper {
     left:-12px;
 }
 * html div#wrapper {
-    background:url(images/bg_wrapper2_V2.png) 0 0 repeat-y;
+    background:__wrapper__;
 }
 
 
@@ -169,12 +169,12 @@ div#head {
 div#logo {
     background-color:#fff;
     float:left;
-        height:108px;
+    height:108px;
     width:204px;
 }
 
 div#head-image {
-    background:url(images/01_V2.jpg) 0 0 no-repeat; 
+    background:__imgblend__ 0 0 no-repeat; 
     float:left;
     height:108px;
     width:811px;
@@ -220,7 +220,7 @@ div#footer-container {
     left:0;
     position:absolute;
     width: 1015px;
-    background:#ffffff url(images/bg_footer_V2.png) left top no-repeat;
+    background:__footer_image__;
     bottom:0;
 }
 * html div#footer-container {
@@ -240,7 +240,7 @@ div#footer-corner {
     display: none;
 }
 div#footer-content {
-    border-top:1px #b3b3b3 solid;
+    border-top:1px __border__ solid;
     height:20px;
     line-height:2.2727em;
     margin-left:26px;
@@ -400,11 +400,11 @@ form {
 }
 
 input, textarea {
-    border:1px solid #b3b3b3;
+    border:1px solid __border__;
     margin:1px;
 }
 form fieldset {
-    border:1px solid #b3b3b3;
+    border:1px solid __border__;
     padding: 0.5em;
 }
 form fieldset legend {
@@ -423,15 +423,7 @@ form label {
 form input {
     vertical-align:middle;
 }
-form input,.form1 textarea,.form1 select {
-    background-color:#e5e5e5;
-    border:1px #b3b3b3 solid;
-    display:block;
-    float:left;
-    font-size:1em;
-    font-weight:400;
-    margin-bottom:6px;
-}
+
 form input[type="submit"] {
     background: linear-gradient(to bottom, #009682 0%, #b3e0da 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
     border-radius: 8px 0;
@@ -444,8 +436,8 @@ form input[type="submit"]:hover {
     color: #000000;
 }
 input,textarea, select {
-    background-color:#e5e5e5;
-    border:1px #b3b3b3 solid;
+    background-color:#fff;
+    border:1px __border__ solid;
     font-size:1em;
     font-weight:400;
     margin-bottom:6px;
@@ -542,7 +534,8 @@ li.level2 a.wikilink1 {
 }
 
 #menu-box a.wikilink1, 
-#menu-box a.wikilink2 {
+#menu-box a.wikilink2i,
+#menu-box a.urlextern {
   font-weight:700;
   color: #808080;
   text-decoration: none !important;
@@ -642,14 +635,14 @@ div#suchen {
     margin:0 0 10px 5px;
     padding:1px;
     background-color:#fff;
-    border: 1px solid #b3b3b3;
+    border: 1px solid __border__;
     height: 15px;
     width:169px;
 }
 div#suchen input[type="text"] {
     margin:0;
     border:0;
-    border-right:1px solid #b3b3b3;
+    border-right:1px solid __border__;
     padding:1px 0 0 0;
     float:left;
     height:14px;
@@ -1093,19 +1086,19 @@ div#suchen button {
 
 #dw__toc a:link,
 #dw__toc a:visited {
-  color: __extern__;
+  color: __text__;
 }
 
 #dw__toc a:hover,
 #dw__toc a:active {
-  color: __text__;
+  color: __existing__;
 }
 
 /* --------------- Links ------------------ */
 
 a:link,
 a:visited {
-  color: __extern__;
+  color: __existing__;
   text-decoration: none;
 }
 a:hover,
@@ -1126,7 +1119,7 @@ a.nolink {
 
 /* external link */
 a.urlextern {
-  background: transparent url(images/link_icon.gif) 0px 1px no-repeat;
+  background: __urlextern_icon__;
   padding: 1px 0px 1px 16px;
 }
 
