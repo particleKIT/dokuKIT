@@ -1403,7 +1403,8 @@ div.site_tools {
 /* hide-plugin integration*/
 
 div.hiddenHead {
-    background-color: #B3B3B3;
+    color: #fff;
+    background-color: #808080;
     font-weight: bold;
     padding-left: 6px;
     font-size: 100%;
