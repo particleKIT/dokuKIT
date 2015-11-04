@@ -281,6 +281,10 @@ span#owner-text a {
 
 
 /* tables */
+.table {
+    display: inline-block;
+    width:100%;
+}
 table.inline {
     color: #000;
     line-height: 1.3em;
