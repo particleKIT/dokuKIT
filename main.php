@@ -34,7 +34,8 @@ echo '
 </head>
 
 <body>
-    <div id="wrapper">
+    <div class="dokuwiki">
+        <div id="wrapper">
 ';
 html_msgarea();
 echo '
@@ -183,6 +184,7 @@ echo '                   </span>
 tpl_indexerWebBug();
 echo '</div>
     </div>
+ </div>
 </body>
 </html>
 ';
