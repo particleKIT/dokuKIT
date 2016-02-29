@@ -1429,11 +1429,11 @@ div.hiddenGlobal.hiddenHidden > div.hiddenHead p::after {
 }
 
 div.hiddenGlobal:not(.hiddenHidden) > div.hiddenHead p::before {
-    background-image: url("/projects/itp/lib/plugins/hidden/images/shrink2.png");
+    background-image: url("/lib/plugins/hidden/images/shrink2.png");
 }
 
 div.hiddenGlobal.hiddenHidden > div.hiddenHead p::before {
-    background-image: url("/projects/itp/lib/plugins/hidden/images/enlarge2.png");
+    background-image: url("/lib/plugins/hidden/images/enlarge2.png");
 }
 
 div.hiddenHead p::before, 
