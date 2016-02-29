@@ -528,15 +528,27 @@ li.level2 a.wikilink1 {
     background-image: url(images/left_navi_V2.gif);
     background-position: right bottom;
     background-repeat: no-repeat;
-    background-color: #ffffff;
     display: block;
+    background-color: #ffffff;
     padding: 2px;
-    margin-bottom: 4px;
+    margin: 4px;
+    padding-right: 1px;
+    margin-right: 0px;
 }
 
 #menu-box .open .idx {
+    padding: 1px;
+    margin: 2px;
     background-color: #D9EFEC;
+    padding-right: 0px !important;
+    margin-right: 0px !important;
 }
+
+.idx ul > .closed li,
+.idx ul > .open li {
+    background-image: none !important;
+}
+
 
 #menu-box a.wikilink1, 
 #menu-box a.wikilink2i,
