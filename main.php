@@ -162,7 +162,7 @@ echo '
                         <div id="footer-corner"><!-- --></div>
                         <div id="footer-text">
                             <div id="footer-content">
-                                <a href="#top" class="footer-right"><img src="lib/tpl/dokukit/images/totop.png" style="margin-top:6px" title="Nach oben" /></a>
+                                <a href="#top" class="footer-right"><img src="'.DOKU_URL.'/lib/tpl/dokukit/images/totop.png" style="margin-top:6px" title="Nach oben" /></a>
                             </div>
                         </div>
                     </div>
