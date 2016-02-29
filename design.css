@@ -1446,12 +1446,12 @@ div.hiddenHead p::before {
 }
 
 /* Translationplugin Integration */
-.plugin_translation {
+.dokuwiki .plugin_translation {
     display:inline-block;
     text-align:right;
 }
 
-.plugin_translation ul {
+.dokuwiki .plugin_translation ul {
     text-align: right;
     margin: 0 auto;
     padding: 0;
@@ -1459,24 +1459,24 @@ div.hiddenHead p::before {
     background-color: transparent;
     border: none;
 }
-.plugin_translation li {
+.dokuwiki .plugin_translation li {
     margin: 0;
     display: inline-block;
     font-size: 85%;
 }
 
-.plugin_translation a {
+.dokuwiki .plugin_translation a {
     color: #4D4D4D;
     display: inline-block;
     min-height: 16px;
 }
 
-.plugin_translation a.wikilink2 {
+.dokuwiki .plugin_translation a.wikilink2 {
     visibility: hidden !important;
     width: 0px;
 }
 
-.plugin_translation .li a.wikilink1:before {
+.dokuwiki .plugin_translation .li a.wikilink1:before {
     color: #4D4D4D;
     content: " | ";
     padding-left: 3px;
