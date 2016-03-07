@@ -457,6 +457,10 @@ form br {
 /* **************** */
 /* LINKE NAVIGATION */
 /* **************** */
+.external_sidebar {
+    padding-top: 20px;
+}
+
 #menu-box {
     margin: 0;
     margin-left: -2px;

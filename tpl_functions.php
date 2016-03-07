@@ -52,12 +52,9 @@ function _tpl_sidebar() {
       auth_quickaclcheck($conf['tpl'][$tpl]['extlinks']) >= AUTH_READ 
      )  
     {
-   
-        echo '<div class="sidebar_box">', DOKU_LF;
+        echo '<div class="sidebar_box external_sidebar">', DOKU_LF;
         echo p_sidebar_xhtml($conf['tpl'][$tpl]['extlinks']), DOKU_LF;
         echo '</div>', DOKU_LF;
-
-
     }	
 
 }
