@@ -294,7 +294,7 @@ table.inline {
     border-collapse: collapse;
 }
 
-table.inline thead th {
+table.inline th {
     background-color: #808080;
     border-bottom: 1px solid #FFF;
     color: #FFF;
