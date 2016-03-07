@@ -32,7 +32,7 @@ function _tpl_sidebar() {
             
             echo '</div>', DOKU_LF;
          } elseif(@file_exists(wikiFN($pname)) && auth_quickaclcheck($pname) >= AUTH_READ) {
-            echo '<div class="sidebar_box">', DOKU_LF;
+            echo '<div class="sidebar_box file">', DOKU_LF;
             echo p_sidebar_xhtml($pname), DOKU_LF;
             echo '</div>', DOKU_LF;
         } else {
@@ -41,7 +41,7 @@ function _tpl_sidebar() {
             echo '</div>', DOKU_LF;
 			   }
    } else {
-    			echo '<div class="sidebar_box">', DOKU_LF;
+    			echo '<div class="sidebar_box dynamic">', DOKU_LF;
     			echo '  ', p_index_xhtml($ID), DOKU_LF;
     			echo '</div>', DOKU_LF;
 	 }

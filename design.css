@@ -461,7 +461,7 @@ form br {
     padding-top: 20px;
 }
 
-#menu-box {
+#menu-box .dynaminc {
     margin: 0;
     margin-left: -2px;
     margin-top: 0px;
@@ -472,30 +472,30 @@ form br {
     color: #000000;
     overflow: hidden;
 }
-#menu-box ul {
+#menu-box .dynaminc ul {
     margin: 0;
     border: 0;
     padding: 0;
     list-style-type: none;
 }
 
-#menu-box .curid {
+#menu-box .dynaminc .curid {
     text-decoration: none;
     font-weight: 700 !important;
 }
 
-#menu-box a:hover {
+#menu-box .dynaminc a:hover {
     text-decoration: underline;
 }
 
-#menu-box a {
+#menu-box .dynaminc a {
     margin-top: 4px;
     padding: 3px 5px 3px 15px;
     display: block;
 }
 
-#menu-box ul.idx li.open div.li a.wikilink2, 
-#menu-box ul.idx li.open div.li a.wikilink1 {
+#menu-box .dynaminc ul.idx li.open div.li a.wikilink2, 
+#menu-box .dynaminc ul.idx li.open div.li a.wikilink1 {
     font-weight: 700;
     color: #ffffff;
     background-color: #009682;
@@ -505,8 +505,8 @@ form br {
     background-position: 6px 8px;
 }
 
-#menu-box ul.idx li.closed div.li a.wikilink2, 
-#menu-box ul.idx li.closed div.li a.wikilink1 {
+#menu-box .dynaminc ul.idx li.closed div.li a.wikilink2, 
+#menu-box .dynaminc ul.idx li.closed div.li a.wikilink1 {
     color:#808080;
     background-color: #ffffff;
     display: block;
@@ -514,21 +514,21 @@ form br {
     background-repeat: no-repeat;
     background-position: 6px 8px;
 }
-li.level4 a.wikilink2, 
-li.level4 a.wikilink1, 
-li.level3 a.wikilink2, 
-li.level3 a.wikilink1, 
-li.level2 a.wikilink2, 
-li.level2 a.wikilink1 {
+#menu-box .dynamic li.level4 a.wikilink2, 
+#menu-box .dynamic li.level4 a.wikilink1, 
+#menu-box .dynamic li.level3 a.wikilink2, 
+#menu-box .dynamic li.level3 a.wikilink1, 
+#menu-box .dynamic li.level2 a.wikilink2, 
+#menu-box .dynamic li.level2 a.wikilink1 {
     font-weight:100 !important;
     color: #000 !important;
     background-image:none !important;
     background-color: #D9EFEC !important;
 }
 
-#menu-box .open, 
-#menu-box .closed,
-#menu-box .level1 {
+#menu-box .dynaminc .open, 
+#menu-box .dynaminc .closed,
+#menu-box .dynaminc .level1 {
     background-image: url(images/left_navi_V2.gif);
     background-position: right bottom;
     background-repeat: no-repeat;
@@ -540,7 +540,7 @@ li.level2 a.wikilink1 {
     margin-right: 0px;
 }
 
-#menu-box .open .idx {
+#menu-box .dynaminc .open .idx {
     padding: 1px;
     margin: 2px;
     background-color: #D9EFEC;
@@ -555,7 +555,7 @@ li.level2 a.wikilink1 {
 
 
 #menu-box a.wikilink1, 
-#menu-box a.wikilink2i,
+#menu-box a.wikilink2,
 #menu-box a.urlextern {
   font-weight:700;
   color: #808080;
@@ -563,7 +563,7 @@ li.level2 a.wikilink1 {
   border-bottom: none !important;
 }
 
-#menu-box .li_level_1_selected_no_children {
+#menu-box .dynaminc .li_level_1_selected_no_children {
     padding-bottom: 5px;
     background-image: url(images/left_navi_V2.gif);
     background-position: right bottom;
@@ -571,21 +571,21 @@ li.level2 a.wikilink1 {
     background-color: #009682;
 }
 
-#menu-box .li_level_1_selected_children ul {
+#menu-box .dynaminc .li_level_1_selected_children ul {
     border-left: 2px solid #ffffff;
     border-right: 2px solid #ffffff;
     padding-bottom: 1px;
 }
-#menu-box .li_level_1_selected_children ul li ul{
+#menu-box .dynaminc .li_level_1_selected_children ul li ul{
     border-left: 0;
     border-right: 0;
     padding-bottom: 0;
 }
 
-#menu-box .li_has_child {
+#menu-box .dynaminc .li_has_child {
     background-color: #d9efec;
 }
-#menu-box .level_1_not_selected {
+#menu-box .dynaminc .level_1_not_selected {
     margin-top: 4px;
     border: 2px solid #ffffff;
     background-color: #ffffff;
@@ -594,7 +594,7 @@ li.level2 a.wikilink1 {
     font-weight:700;
 }
 
-#menu-box .selected {
+#menu-box .dynaminc .selected {
     margin: 0px;
     border-bottom: 2px solid #ffffff;
     color: #000000;
@@ -602,41 +602,41 @@ li.level2 a.wikilink1 {
     background-color: #b3e0da;
     font-weight: 700;
 }
-#menu-box .has_no_children {
+#menu-box .dynaminc .has_no_children {
     padding-bottom: 0;
     border-bottom: 0;
 }
-#menu-box .has_children_open {
+#menu-box .dynaminc .has_children_open {
     background-image: url(images/navi_level_1_open.gif);
     background-repeat: no-repeat;
     background-position: 6px 8px;
 }
-#menu-box ul li ul li .has_children_open {
+#menu-box .dynaminc ul li ul li .has_children_open {
     background-image: url(images/navi_open.gif);
 }
-* html #menu-box ul li .has_children_open {
+* html #menu-box .dynaminc ul li .has_children_open {
     background-position: 8px 10px;
 }
-* html #menu-box ul li ul li .has_children_open {
+* html #menu-box .dynaminc ul li ul li .has_children_open {
     background-position: 8px 8px;
 }
-#menu-box .has_children_closed {
+#menu-box .dynaminc .has_children_closed {
     /* padding-bottom: 0; */
     border-bottom: 0;
     background-image: url(images/navi_level_1_closed.gif);
     background-repeat: no-repeat;
     background-position: 6px 6px;
 }
-#menu-box ul li ul li .has_children_closed {
+#menu-box .dynaminc ul li ul li .has_children_closed {
     background-image: url(images/navi_closed.gif);
 }
-* html #menu-box ul li .has_children_closed {
+* html #menu-box .dynaminc ul li .has_children_closed {
     background-position: 8px 8px;
 }
-* html #menu-box ul li ul li .has_children_closed {
+* html #menu-box .dynaminc ul li ul li .has_children_closed {
     background-position: 8px 6px;
 }
-#menu-box .item_not_selected {
+#menu-box .dynaminc .item_not_selected {
     margin: 0;
     margin-left: 10px;
     /* padding-bottom:0; */
@@ -644,12 +644,106 @@ li.level2 a.wikilink1 {
     /* color: #000000; */
     font-weight: 400;
 }
-#menu-box .item_selected {
+#menu-box .dynaminc .item_selected {
     margin: 0;
     margin-left: 10px;
     color:#000000;
     font-weight: 700;
 }
+
+/* statische navi */
+
+#menu-box .file {
+    margin: 0;
+    margin-left: -2px;
+    margin-top: 0px;
+    padding: 0;
+    width: 178px;
+    font-family: verdana;
+    font-size:.9091em;
+    color: #000000;
+    overflow: hidden;
+}
+#menu-box .file ul {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#menu-box .file .curid {
+    text-decoration: none;
+    font-weight: 700 !important;
+}
+
+#menu-box .file a:hover {
+    text-decoration: underline;
+}
+
+#menu-box .file a {
+    margin-top: 4px;
+    padding: 3px 5px 3px 15px;
+    display: block;
+}
+
+#menu-box .file .level1 div.li .curid a.wikilink2, 
+#menu-box .file .level1 div.li .curid a.wikilink1 { 
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #009682;
+    display: block;
+}
+
+#menu-box .file .level2 div.li .curid a.wikilink2, 
+#menu-box .file .level2 div.li .curid a.wikilink1 { 
+    font-weight: 700;
+    display: block;
+    background-color:#D9EFEC;
+    color: #000000;
+}
+
+#menu-box .file .level1 .li {
+    background-image: url(images/left_navi_V2.gif);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    display: block;
+    background-color: #ffffff;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 4px;
+    margin-right: 0px;
+}
+
+#menu-box .file .level2 .li {
+    display: block;
+    background-image: none !important;
+    background-color:#D9EFEC;
+    padding-right: 15px;
+    margin-right: 4px;
+    font-weight: 100 !important;
+    color: #000000;
+}
+
+#menu-box .file .level2 .li a.wikilink1, 
+#menu-box .file .level2 .li a.wikilink2,
+#menu-box .file .level2 .li a.urlextern {
+  font-weight:400;
+  color: #000;
+}
+
+#menu-box .file .level1 ul { 
+    background-color:#D9EFEC;
+    margin-left: 4px;
+}
+
+#menu-box .file .node { 
+    background-color:#fff;
+    margin-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 1px;
+}
+
+
 
 /* Suche */
 div#suchen {
