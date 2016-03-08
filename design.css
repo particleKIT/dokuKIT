@@ -1575,7 +1575,6 @@ div.hiddenHead p::before {
 .dokuwiki .plugin_translation li {
     margin: 0;
     display: inline-block;
-    font-size: 85%;
 }
 
 .dokuwiki .plugin_translation a {
