@@ -458,7 +458,16 @@ form br {
 /* LINKE NAVIGATION */
 /* **************** */
 .external_sidebar {
-    padding-top: 20px;
+    background-image: url(images/left_navi_V2.gif);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    display: block;
+    background-color: #ffffff;
+    padding: 2px;
+    margin: 4px;
+    margin-top: 20px;
+    padding-right: 1px;
+    margin-right: 0px;
 }
 
 #menu-box .dynaminc {
