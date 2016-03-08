@@ -1604,4 +1604,17 @@ div.hiddenHead p::before {
   padding: 0;
 }
 
+/* double column staff member sites */
+.dokuwiki .memberimage {
+    position:relative;
+    float:left;
+    width: 200px;
+    margin: 40px;
+}
 
+.dokuwiki .memberdescription {
+    position:relative;
+    float:left;
+    text-align:left;
+    width: 60%;
+}
