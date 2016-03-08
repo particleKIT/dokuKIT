@@ -18,9 +18,9 @@ echo '
 <head>
   <meta charset="utf-8" />
   <title>
-';
+$conf["tpl"]["dokukit"]["title_prefix"] ';
 tpl_pagetitle();
-echo '[', strip_tags($conf['title']), ']
+echo '
   </title>
 ';
 tpl_metaheaders();
