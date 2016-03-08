@@ -457,19 +457,13 @@ form br {
 /* **************** */
 /* LINKE NAVIGATION */
 /* **************** */
-.external_sidebar {
-    background-image: url(images/left_navi_V2.gif);
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    display: block;
-    background-color: #ffffff;
-    padding: 2px;
-    margin: 4px;
-    margin-top: 20px;
-    padding-right: 1px;
-    margin-right: 0px;
+
+
+#menu-box .external_sidebar {
+    padding-top: 20px !important;
 }
 
+/* dynamic navi created from index */
 #menu-box .dynamic {
     margin: 0;
     margin-left: -2px;
@@ -662,7 +656,8 @@ form br {
 
 /* statische navi */
 
-#menu-box .file {
+#menu-box .file,
+#menu-box .external_sidebar {
     margin: 0;
     margin-left: -2px;
     margin-top: 0px;
@@ -673,7 +668,9 @@ form br {
     color: #000000;
     overflow: hidden;
 }
-#menu-box .file ul {
+
+#menu-box .file ul,
+#menu-box .external_sidebar ul {
     margin: 0;
     border: 0;
     padding: 0;
@@ -685,11 +682,13 @@ form br {
     font-weight: 700 !important;
 }
 
-#menu-box .file a:hover {
+#menu-box .file a:hover,
+#menu-box .external_sidbar a:hover {
     text-decoration: underline;
 }
 
-#menu-box .file a {
+#menu-box .file a,
+#menu-box .external_sidbar {
     margin-top: 4px;
     padding: 3px 5px 3px 15px;
     display: block;
@@ -711,7 +710,8 @@ form br {
     color: #000000;
 }
 
-#menu-box .file .level1 .li {
+#menu-box .file .level1 .li,
+#menu-box .external_sidebar li.level1 { 
     background-image: url(images/left_navi_V2.gif);
     background-position: right bottom;
     background-repeat: no-repeat;
