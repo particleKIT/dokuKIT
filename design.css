@@ -1594,6 +1594,11 @@ div.hiddenHead p::before {
     content: " | ";
     padding-left: 3px;
 }
+
+/* hide the inactive language button in the header*/
+.plugin_translation ul li a:not(.cur) {
+  display: none;
+}
 /*  */
 
 /* nspages plugin compatibility */
