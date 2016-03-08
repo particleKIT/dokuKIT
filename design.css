@@ -1240,12 +1240,6 @@ a.nolink {
   text-decoration: none !important;
 }
 
-/* external link */
-a.urlextern {
-  background: __urlextern_icon__;
-  padding: 1px 0px 1px 16px;
-}
-
 /* windows share */
 a.windows {
   background: transparent url(images/windows.gif) 0px 1px no-repeat;
