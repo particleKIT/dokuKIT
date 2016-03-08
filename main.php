@@ -18,7 +18,7 @@ echo '
 <head>
   <meta charset="utf-8" />
   <title>
-$conf["tpl"]["dokukit"]["title_prefix"] ';
+', $conf["tpl"]["dokukit"]["title_prefix"];
 tpl_pagetitle();
 echo '
   </title>
