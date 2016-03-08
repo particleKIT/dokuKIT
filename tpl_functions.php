@@ -27,7 +27,7 @@ function _tpl_sidebar() {
     if($conf['tpl'][$tpl]['sidebar']== 'file')  {
         $ns_sb = _getNsSb($ID);
         if($ns_sb && auth_quickaclcheck($ns_sb) >= AUTH_READ) {
-            echo '<div class="sidebar_box">', DOKU_LF;
+            echo '<div class="sidebar_box file">', DOKU_LF;
             echo p_sidebar_xhtml($ns_sb), DOKU_LF;
             
             echo '</div>', DOKU_LF;
