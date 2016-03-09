@@ -41,10 +41,10 @@ html_msgarea();
 echo '
         <div id="metanavigation">';
 tpl_link(wl(),'HOME','name="dokuwiki__top" id="dokuwiki__top"');
-tpl_link('http://www.kit.edu/impressum.php', tpl_getLang('imprint'));
+tpl_link('https://www.kit.edu/impressum.php', tpl_getLang('imprint'));
 // tpl_link(DOKU_URL.'imprint', tpl_getLang('imprint'));
 // tpl_link(DOKU_URL.'sitemap', 'SITEMAP');
-tpl_link('http://www.kit.edu/', 'KIT');
+tpl_link('https://www.kit.edu/', 'KIT');
 
 $translation = plugin_load('helper','translation');
 if ($translation) echo $translation->showTranslations();
@@ -61,7 +61,7 @@ echo '
 
     <div id="head">
         <div id="logo">
-            <a href="http://www.kit.edu" title="KIT-Logo - Link zur KIT-Startseite">
+            <a href="https://www.kit.edu" title="KIT-Logo - Link zur KIT-Startseite">
                 <img src="'.DOKU_URL.'/lib/tpl/dokukit/images/kit_logo_V2_de.png" alt="KIT-Logo - Link zur KIT-Startseite">
             </a>
         </div>
