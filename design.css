@@ -695,6 +695,7 @@ form br {
 }
 
 #menu-box .file .level1 div.li .curid a.wikilink2, 
+#menu-box .file li.node > div > a.wikilink1,
 #menu-box .file .level1 div.li .curid a.wikilink1 { 
     font-weight: 700;
     color: #ffffff;
