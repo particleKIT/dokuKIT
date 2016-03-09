@@ -688,7 +688,7 @@ form br {
 }
 
 #menu-box .file a,
-#menu-box .external_sidbar {
+#menu-box .external_sidebar a {
     margin-top: 4px;
     padding: 3px 5px 3px 15px;
     display: block;
