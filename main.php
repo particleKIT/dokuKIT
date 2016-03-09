@@ -19,7 +19,7 @@ echo '
   <meta charset="utf-8" />
   <title>
 ', $conf["tpl"]["dokukit"]["title_prefix"];
-tpl_pagetitle();
+echo preg_replace('/^en:/','',tpl_pagetitle(null, true));
 echo '
   </title>
 ';
