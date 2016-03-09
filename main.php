@@ -18,9 +18,9 @@ echo '
 <head>
   <meta charset="utf-8" />
   <title>
-';
+', $conf["tpl"]["dokukit"]["title_prefix"];
 tpl_pagetitle();
-echo '[', strip_tags($conf['title']), ']
+echo '
   </title>
 ';
 tpl_metaheaders();
@@ -68,7 +68,7 @@ echo '
         </div>
         <div id="head-image" >
             <div id="head-text" class="big_font">';
-            tpl_link(wl(),$conf['title'],'name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]"');
+            tpl_link(wl(),$conf['title'].' ('. $conf["tpl"]["dokukit"]["institute"].')' ,'name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]"');
 
 echo '      </div>
             <div id="head-text-corner">&nbsp;</div>               
