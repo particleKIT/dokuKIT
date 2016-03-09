@@ -1595,7 +1595,7 @@ div.hiddenHead p::before {
 }
 
 /* hide the inactive language button in the header*/
-.plugin_translation ul li a:not(.cur) {
+.plugin_translation ul li a.cur {
   display: none;
 }
 /*  */
