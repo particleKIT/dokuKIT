@@ -53,8 +53,7 @@ if ($translation) echo $translation->showTranslations();
 tpl_button('admin');
 if($_SERVER['REMOTE_USER']) tpl_button('profile');
 
-if($ACT != 'login' && $ACT != 'logout' && $_SERVER['REMOTE_USER']) tpl_button('login');
-
+if($ACT != 'login' && $ACT != 'logout' && $_SERVER['REMOTE_USER'] || $conf["tpl"]["dokukit"]["showlogin"]) tpl_button('login');
 echo '
         </div>
 
