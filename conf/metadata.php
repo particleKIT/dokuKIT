@@ -17,4 +17,5 @@ $meta['sidebaredit'] = array('onoff');
 $meta['showextlinks'] = array('onoff'); 
 $meta['extlinks'] = array('string'); 
 $meta['title_prefix'] = array('string'); 
+$meta['institute'] = array('string'); 
 ?>
