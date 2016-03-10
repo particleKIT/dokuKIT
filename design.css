@@ -289,7 +289,7 @@ table.inline {
     color: #000;
     line-height: 1.3em;
     margin-bottom: 10px;
-    width: 760px;
+    width: 100%;
     border-spacing: 0px;
     border-collapse: collapse;
 }
