@@ -179,9 +179,10 @@ echo '                   </span>
 ';
 
 
-#tpl_license(false);
 /* provide DokuWiki housekeeping, required in all templates */ 
-tpl_indexerWebBug();
+if($_SERVER['REMOTE_USER']){
+  tpl_indexerWebBug();
+}
 echo '</div>
     </div>
  </div>
