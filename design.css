@@ -659,8 +659,6 @@ form br {
 #menu-box .file,
 #menu-box .external_sidebar {
     margin: 0;
-    margin-left: -2px;
-    margin-top: 0px;
     padding: 0;
     width: 178px;
     font-family: verdana;
@@ -689,9 +687,10 @@ form br {
 
 #menu-box .file a,
 #menu-box .external_sidebar a {
-    margin-top: 4px;
-    padding: 3px 5px 3px 15px;
+    padding: 3px 5px 3px 15px; 
     display: block;
+    margin-top: 4px;
+    border: 2px solid white;
 }
 
 #menu-box .file .level1 div.li .curid a.wikilink2, 
@@ -718,18 +717,29 @@ form br {
     background-repeat: no-repeat;
     display: block;
     background-color: #ffffff;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    margin: 4px;
-    margin-right: 0px;
+    padding-bottom: 5px;
+}
+
+#menu-box .file .level2 > .li a {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 0;
+    padding-bottom: 0px;
+}
+
+#menu-box .file .level1 > ul {
+    background-image: url(images/left_navi_V2.gif);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    display: block;
+    background-color: #ffffff;
+    padding-bottom: 5px;
 }
 
 #menu-box .file .level2 .li {
     display: block;
     background-image: none !important;
     background-color:#D9EFEC;
-    padding-right: 15px;
-    margin-right: 4px;
     font-weight: 100 !important;
     color: #000000;
 }
@@ -743,14 +753,17 @@ form br {
 
 #menu-box .file .level1 ul { 
     background-color:#D9EFEC;
-    margin-left: 4px;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
 }
 
-#menu-box .file .node { 
-    background-color:#fff;
-    margin-left: 4px;
-    padding-right: 4px;
-    padding-bottom: 1px;
+#menu-box .file .level2 .li { 
+    padding-bottom: 3px; 
+}
+#menu-box .file .node > .li { 
+    padding-bottom: 0px; 
+    background-image: none;
+    border-bottom: 2px solid white;
 }
 
 
