@@ -741,6 +741,9 @@ form br {
     background-color:#D9EFEC;
     font-weight: 100 !important;
     color: #000000;
+    padding-bottom: 3px; 
+    border-right: 2px solid white;
+    border-left: 2px solid white;
 }
 
 #menu-box .file .level2 .li a.wikilink1, 
@@ -752,13 +755,8 @@ form br {
 
 #menu-box .file .level1 ul { 
     background-color:#D9EFEC;
-    border-left: 2px solid white;
-    border-right: 2px solid white;
 }
 
-#menu-box .file .level2 .li { 
-    padding-bottom: 3px; 
-}
 #menu-box .file .node > .li { 
     padding-bottom: 0px; 
     background-image: none;
