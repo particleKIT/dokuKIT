@@ -49,7 +49,7 @@ tpl_link('https://www.kit.edu/', 'KIT');
 $translation = plugin_load('helper','translation');
 if ($translation) { 
     echo $translation->showTranslations();
-    $conf['title'] =  $conf["tpl"]["dokukit"]["institute"][$conf['lang']];
+    $conf['title'] =  $conf["tpl"]["dokukit"]["institute_".$conf['lang']];
 }
 
 
