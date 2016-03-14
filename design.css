@@ -446,6 +446,9 @@ input,textarea, select {
     font-weight:400;
     margin-bottom:6px;
 }
+textarea.edit {
+width: 950px;
+}
 form label {
     float:left;
     font-weight:700;
