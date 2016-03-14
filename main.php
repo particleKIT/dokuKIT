@@ -174,7 +174,7 @@ if($ACT != 'diff' && $ACT != 'edit' && $ACT != 'preview' && $ACT != 'admin' && $
   _tpl_pageinfo();
 }
 echo '                   </span>
-                         <span id="owner-text">KIT – Die Forschungsuniversität in der Helmholtz-Gemeinschaft</span>
+                         <span id="owner-text">'.$lang['kitfooter'].'</span>
                     </div>
 ';
 
