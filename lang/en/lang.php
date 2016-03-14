@@ -16,4 +16,5 @@ $lang['sidebaredit'] = 'show edit button in sidebar';
 $lang['imprint'] = 'IMPRINT';
 $lang['extlinks'] = 'embed external links in sidebar';
 $lang['kitfooter'] = 'KIT – The Research University in the Helmholtz Association';
+$lang['kitlogo'] = 'KIT-Logo - Link to KIT Homepage'
 ?>

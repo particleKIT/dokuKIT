@@ -61,8 +61,8 @@ echo '
 
     <div id="head">
         <div id="logo">
-            <a href="https://www.kit.edu" title="KIT-Logo - Link zur KIT-Startseite">
-                <img src="'.DOKU_URL.'/lib/tpl/dokukit/images/kit_logo_V2_de.png" alt="KIT-Logo - Link zur KIT-Startseite">
+            <a href="https://www.kit.edu" title="'.$lang['kitlogo'].'">
+                <img src="'.DOKU_URL.'/lib/tpl/dokukit/images/logo_'.$conf['lang'].'_163.jpg" alt="'.$lang['kitlogo'].'">
             </a>
         </div>
         <div id="head-image" >
