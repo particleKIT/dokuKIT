@@ -16,7 +16,11 @@ $conf['tpl']['dokukit']['showmedia'] = 0;  // 1 or 0
 $conf['tpl']['dokukit']['sidebaredit'] = 1; // 1 or 0 
 $conf['tpl']['dokukit']['showextlinks'] = 1; // 1 or 0 
 $conf['tpl']['dokukit']['extlinks'] = 'extlinks'; //filename 
-$conf['tpl']['dokukit']['institute'] = 'TTP'; //instituts name
+$conf['tpl']['dokukit']['institute']['de'] = $conf['title']; //german institute name
+$conf['tpl']['dokukit']['institute']['en'] = $conf['title'];  //english institute name
+$conf['tpl']['dokukit']['shortinstitute'] = 'TTP'; //instituts short name
 $conf['tpl']['dokukit']['title_prefix'] = $conf['tpl']['dokukit']['institute'].' - '; //prefix string
 $conf['tpl']['dokukit']['showlogin'] = 1; //show loginbutton
+$conf['tpl']['dokukit']['showlogin'] = 1; //show loginbutton
+
 ?>

@@ -47,7 +47,10 @@ tpl_link('https://www.kit.edu/impressum.php', tpl_getLang('imprint'));
 tpl_link('https://www.kit.edu/', 'KIT');
 
 $translation = plugin_load('helper','translation');
-if ($translation) echo $translation->showTranslations();
+if ($translation) { 
+    echo $translation->showTranslations();
+    $conf['title'] =  $conf["tpl"]["dokukit"]["institute"][$conf['lang']];
+}
 
 
 tpl_button('admin');
@@ -67,7 +70,7 @@ echo '
         </div>
         <div id="head-image" >
             <div id="head-text" class="big_font">';
-            tpl_link(wl(),$conf['title'].' ('. $conf["tpl"]["dokukit"]["institute"].')' ,'name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]"');
+            tpl_link(wl(),$conf['title'].' ('. $conf["tpl"]["dokukit"]["shortinstitute"].')' ,'name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]"');
 
 echo '      </div>
             <div id="head-text-corner">&nbsp;</div>               
