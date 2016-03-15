@@ -69,9 +69,26 @@ div#left-row {
 
 /* Rechte Spalte */
 div#right-row {
-    display:none;
-    float:right;
-    width:199px;
+    background-color: #e5e5e5;
+    border: 0px none;
+    width: 199px;
+    float: right;
+    margin-right: -20px;
+    margin-top: -10px;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+div#info-box {
+    margin: 10px;
+    background-color: white;
+    padding: 5px;
+}
+
+div#inner-left-row {
+    float: left;
+    width: 562px;
 }
 
 /* mittlere Spalte */
