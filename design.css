@@ -68,7 +68,7 @@ div#left-row {
 }
 
 /* Rechte Spalte */
-div#right-row {
+.right-row {
     background-color: #e5e5e5;
     border: 0px none;
     width: 199px;
@@ -80,13 +80,13 @@ div#right-row {
     display: inline-block;
 }
 
-div#info-box {
+.info-box {
     margin: 10px;
     background-color: white;
     padding: 5px;
 }
 
-div#inner-left-row {
+.inner-left-row {
     float: left;
     width: 562px;
 }
