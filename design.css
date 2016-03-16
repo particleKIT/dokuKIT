@@ -80,6 +80,7 @@ div#left-row {
     display: table-cell;
     margin: -20px;
     padding-bottom: 10px;
+    z-index: 2;
 }
 
 .info-box {
@@ -1551,6 +1552,8 @@ div.site_tools {
    padding-right: 12px;
    padding-left: 4px;
    padding-bottom: 4px;
+   position: relative;
+   z-index: 3;
 }
 
 /* hide-plugin integration*/
