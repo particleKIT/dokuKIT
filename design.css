@@ -104,6 +104,7 @@ div#middle-row, .inline, {
     float: left;
     width: 760px;
     height: 100%;
+    display: table-cell;
 }
 
 /* Container */
