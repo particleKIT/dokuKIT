@@ -78,8 +78,8 @@ div#left-row {
     height: 100%;
     position: relative;
     display: table-cell;
-    margin: -20px;
-    padding-bottom: 10px;
+    margin-right: -20px;
+    margin-top: -20px;
     z-index: 2;
 }
 
