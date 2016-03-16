@@ -72,14 +72,14 @@ div#left-row {
 /* Rechte Spalte */
 .right-row {
     background-color: #e5e5e5;
-    border: 0px none;
+    border: 0 none;
     width: 199px;
     float: right;
-    margin-right: -20px;
-    margin-top: -17px;
     height: 100%;
     position: relative;
     display: table-cell;
+    margin: -20px;
+    padding-bottom: 10px;
 }
 
 .info-box {
@@ -104,7 +104,7 @@ div#middle-row, .inline, {
     float: left;
     width: 760px;
     height: 100%;
-    display: table-cell;
+    display: table;
 }
 
 /* Container */
@@ -126,6 +126,7 @@ div#content {
     margin:-3px 0 19px;
     height: 100%;
     position:relative;
+    display: table-cell;
 }
 
 /* Spacer */
