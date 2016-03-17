@@ -116,12 +116,8 @@ if($conf['tpl']['dokukit']['showsearch']) {
     }
 
     _tpl_sidebar();
+    echo '</div></div>', DOKU_LF;
     _tpl_infobox(); 
-    echo '   
-            </div>
-        <br/>
-    </div>';
-
 
 if($_SERVER['REMOTE_USER']){
 echo '
