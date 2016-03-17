@@ -21,6 +21,6 @@ $conf['tpl']['dokukit']['institute_en'] = $conf['title'];  //english institute n
 $conf['tpl']['dokukit']['shortinstitute'] = 'TTP'; //instituts short name
 $conf['tpl']['dokukit']['title_prefix'] = $conf['tpl']['dokukit']['institute'].' - '; //prefix string
 $conf['tpl']['dokukit']['showlogin'] = 1; //show loginbutton
-$conf['tpl']['dokukit']['showlogin'] = 1; //show loginbutton
-
+$conf['tpl']['dokukit']['boxfiles'] = ''; //comma separated list of files
+$conf['tpl']['dokukit']['showboxes'] = 0; //1 or 0
 ?>
