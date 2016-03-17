@@ -14,7 +14,6 @@ html,body {
     height:100%;
 }
 * {
-/*    border:0; */
     font-family:Verdana, Arial, Helvetica, sans-serif;
     margin:0;
     padding:0;
@@ -45,6 +44,12 @@ a:link,a:active,a:visited {
 a:hover {
     text-decoration:underline;
 }
+/* Link to the current active page -- bold */
+.curid {
+    text-decoration: none;
+    font-weight: 700 !important;
+}
+
 /* Wrapper */
 div#wrapper {
     background:__wrapper__;
@@ -623,7 +628,6 @@ form br {
     border: 2px solid #ffffff;
     background-color: #ffffff;
     color:#808080; 
-    /* color: #808080; */
     font-weight:700;
 }
 
@@ -631,7 +635,6 @@ form br {
     margin: 0px;
     border-bottom: 2px solid #ffffff;
     color: #000000;
-    /* color: #000000; */
     background-color: #b3e0da;
     font-weight: 700;
 }
@@ -654,7 +657,6 @@ form br {
     background-position: 8px 8px;
 }
 #menu-box .dynamic .has_children_closed {
-    /* padding-bottom: 0; */
     border-bottom: 0;
     background-image: url(images/navi_level_1_closed.gif);
     background-repeat: no-repeat;
@@ -672,9 +674,7 @@ form br {
 #menu-box .dynamic .item_not_selected {
     margin: 0;
     margin-left: 10px;
-    /* padding-bottom:0; */
     color: #000000;
-    /* color: #000000; */
     font-weight: 400;
 }
 #menu-box .dynamic .item_selected {
