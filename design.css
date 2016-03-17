@@ -70,32 +70,28 @@ div#left-row {
 }
 
 /* Rechte Spalte */
-.right-row {
-    background-color: #e5e5e5;
-    border: 0 none;
-    width: 199px;
+div#right-row {
     float: right;
-    height: 100%;
-    position: relative;
-    display: table-cell;
-    margin-right: -20px;
-    padding-bottom: 20px;
-    margin-top: -20px;
-    z-index: 2;
-}
-
-.info-box {
-    margin: 10px;
-    background-color: white;
-    padding: 5px;
-}
-
-.inner-left-row {
-    float: left;
-    width: 562px;
+    width: 199px;
     display: table-cell;
     position: relative;
     height: 100%;
+}
+
+div.infobox {
+    background: #fff url(imgages/infobox_right_top_V2.gif) right top no-repeat;
+    margin-bottom: 10px;
+    width: 188px;
+}
+
+div.infobox-inner {
+    background: url(images/infobox_left_bottom_V2.gif) left bottom no-repeat;
+    color: #000000;
+    font-size: .91em;
+    line-height: 1.18em;
+    padding: 7px 10px 10px 9px;
+    width: 168px;
+    overflow: hidden;
 }
 
 /* mittlere Spalte */
@@ -103,8 +99,9 @@ div#middle-row, .inline, {
     font-size: 1em;
     background-color: #FFF;
     padding: 10px;
+    margin: 0 10px 10px 0;
     float: left;
-    width: 760px;
+    width: 564px; /* set this to 760px if no right-box is shown */
     height: 100%;
     display: table;
 }

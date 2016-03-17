@@ -60,10 +60,38 @@ function _tpl_sidebar() {
 }
 
 /**
+ * right info boxes
+ */
+function _tpl_infobox() {
+    global $lang;
+    global $conf;
+    global $ID;
+    if(!defined('DOKU_LF')) define('DOKU_LF',"\n");
+    $boxfiles = 'infobox'
+    $boxfiles = explode($conf['tpl']['dokukit']['boxfiles'], ',')
+    if(count($boxfiles)>0){
+        echo '<div id="right-row">', DOKU_LF;
+        while (list(, $pname) = each($boxfiles)) {
+            $ns_sb = _getNsSb($ID, $pname);
+            if($ns_sb && auth_quickaclcheck($ns_sb) >= AUTH_READ) {
+                echo '<div class="infobox"><div class="infobox-inner">', DOKU_LF;
+                echo p_sidebar_xhtml($ns_sb), DOKU_LF;
+                echo '</div></div>', DOKU_LF;
+             } elseif(@file_exists(wikiFN($pname)) && auth_quickaclcheck($pname) >= AUTH_READ) {
+                echo '<div class="infobox"><div class="infobox-inner">', DOKU_LF;
+                echo p_sidebar_xhtml($pname), DOKU_LF;
+                echo '</div></div>', DOKU_LF;
+            }
+        }
+        echo '</div>';
+    }
+}
+
+
+/**
  * searches for namespace sidebars
  */
-function _getNsSb($id) {
-    $pname = 'sidebar';
+function _getNsSb($id, $pname = 'sidebar') {
     $ns_sb = '';
     $path  = explode(':', $id);
     
