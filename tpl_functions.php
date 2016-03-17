@@ -68,7 +68,7 @@ function _tpl_infobox() {
     global $ID;
     if(!defined('DOKU_LF')) define('DOKU_LF',"\n");
     $conf['tpl']['dokukit']['boxfiles'] = 'infobox';
-    $boxfiles = explode($conf['tpl']['dokukit']['boxfiles'], ',');
+    $boxfiles = explode(',', $conf['tpl']['dokukit']['boxfiles']);
     $infoboxes = array();
     if(count($boxfiles)>0){
         while (list(, $pname) = each($boxfiles)) {
