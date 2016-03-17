@@ -1463,6 +1463,8 @@ pre.pre {
 /* code blocks by code tag */
 pre.code {
   background-color: __background_other__;
+  overflow: auto;
+  width: 560px;
 }
 
 /* code blocks by file tag */
