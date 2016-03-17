@@ -60,10 +60,41 @@ function _tpl_sidebar() {
 }
 
 /**
+ * right info boxes
+ */
+function _tpl_infobox() {
+    global $lang;
+    global $conf;
+    global $ID;
+    if(!defined('DOKU_LF')) define('DOKU_LF',"\n");
+    $boxfiles = explode(',', $conf['tpl']['dokukit']['boxfiles']);
+    $infoboxes = array();
+    if($ID !=  $conf['start'] && $ID != $conf['lang'].':'.$conf['start'] || !$conf['tpl']['dokukit']['showboxes']) unset($boxfiles);
+    if(count($boxfiles)>0){
+        while (list(, $pname) = each($boxfiles)) {
+            $ns_sb = _getNsSb($ID, $pname);
+            if($ns_sb && auth_quickaclcheck($ns_sb) >= AUTH_READ) {
+                $infoboxes[] = '<div class="infobox"><div class="infobox-inner">'.p_sidebar_xhtml($ns_sb).'</div></div>';
+             } elseif(@file_exists(wikiFN($pname)) && auth_quickaclcheck($pname) >= AUTH_READ) {
+                $infoboxes[] = '<div class="infobox"><div class="infobox-inner">'.p_sidebar_xhtml($pname).'</div></div>';
+            }
+        }
+    }
+
+    if(count($infoboxes)>0){
+        echo '<div id="right-row">', DOKU_LF;
+        while (list(, $infobox) = each($infoboxes)) echo $infobox, DOKU_LF;
+        echo '</div>', DOKU_LF;
+    } else {
+        echo '<style type="text/css">#middle-row, .tabelle3, .ptabelle, .ptabelleblank, .datentabelle { width:760px !important; }  </style>', DOKU_LF;
+    }
+}
+
+
+/**
  * searches for namespace sidebars
  */
-function _getNsSb($id) {
-    $pname = 'sidebar';
+function _getNsSb($id, $pname = 'sidebar') {
     $ns_sb = '';
     $path  = explode(':', $id);
     

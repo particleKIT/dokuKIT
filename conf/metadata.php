@@ -21,4 +21,6 @@ $meta['institute_de'] = array('string');
 $meta['institute_en'] = array('string'); 
 $meta['shortinstitute'] = array('string'); 
 $meta['showlogin'] = array('onoff'); 
+$meta['boxfiles'] = array('string');
+$meta['showboxs'] = array('onoff');
 ?>
