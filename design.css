@@ -76,6 +76,8 @@ div#right-row {
     display: table-cell;
     position: relative;
     height: 100%;
+    background-color: #e5e5e5;
+    padding-left: 10px;
 }
 
 div.infobox {
@@ -99,7 +101,7 @@ div#middle-row, .inline, {
     font-size: 1em;
     background-color: #FFF;
     padding: 10px;
-    margin: 0 10px 10px 0;
+    margin-bottom: 10px;
     float: left;
     width: 564px; /* set this to 760px if no right-box is shown */
     height: 100%;

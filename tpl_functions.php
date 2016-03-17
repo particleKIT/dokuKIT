@@ -70,6 +70,7 @@ function _tpl_infobox() {
     $conf['tpl']['dokukit']['boxfiles'] = 'infobox';
     $boxfiles = explode(',', $conf['tpl']['dokukit']['boxfiles']);
     $infoboxes = array();
+    if($ID !=  $conf['start'] && $ID != $conf['lang'].':'.$conf['start']) unset($boxfiles);
     if(count($boxfiles)>0){
         while (list(, $pname) = each($boxfiles)) {
             $ns_sb = _getNsSb($ID, $pname);
