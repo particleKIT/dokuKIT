@@ -1617,7 +1617,7 @@ div.hiddenHead p::before {
     margin: 0 auto;
     padding: 0;
     list-style: none;
-    background-color: transparent;
+    background-color: transparent !important;
     border: none;
 }
 .dokuwiki .plugin_translation li {
@@ -1626,7 +1626,7 @@ div.hiddenHead p::before {
 }
 
 .dokuwiki .plugin_translation a {
-    color: #4D4D4D;
+    color: #4D4D4D !important;
     display: inline-block;
     min-height: 16px;
 }
@@ -1641,6 +1641,19 @@ div.hiddenHead p::before {
     content: " | ";
     padding-left: 3px;
 }
+
+
+/* explicitly overwrite translation_plugin style */
+.dokuwiki div.plugin_translation ul li a.wikilink1:link,
+.dokuwiki div.plugin_translation ul li a.wikilink1:hover,
+.dokuwiki div.plugin_translation ul li a.wikilink1:active,
+.dokuwiki div.plugin_translation ul li a.wikilink1:visited {
+    background-color: transparent !important;
+    color: #4D4D4D !important;
+    padding: 0px;
+    margin: 0px;
+}
+
 
 /* hide the inactive language button in the header*/
 .plugin_translation ul li a.cur {
