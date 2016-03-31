@@ -450,10 +450,6 @@ form fieldset legend {
     font-size:1.2em;
     line-height:1.2em;
     color: #000000;
-    float: left;
-}
-form#dw__login fieldset legend {
-    float: none;
 }
 form label {
     padding-left: 0.5em;
