@@ -481,8 +481,9 @@ input,textarea, select {
     font-weight:400;
     margin-bottom:6px;
 }
+/* textarea.edit needs flexible width to work both in edit and locked mode, see #25 */
 textarea.edit {
-width: 950px;
+	width: 100%;
 }
 form label {
     float:left;
