@@ -718,7 +718,7 @@ form br {
 	background-color: #009682;
 }
 
-#menu-box .file li.level1.linktocurrent > .li > a.wikilink1 {
+#menu-box .file li.level1.linktocurrent > .li a.wikilink1 {
 	color: #ffffff;
 }
 
