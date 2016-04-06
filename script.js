@@ -9,14 +9,16 @@ jQuery(function(){
     path2 = paths.slice(0,3).join('/');
     patharr = [path1, path2];
     for (p in patharr) {
-        if (patharr[p].endsWith('/')) {
+        if (patharr[p].substr(-1) === "/") {
             patharr.push(patharr[p]+'start');
         }
     }
 
     // keep only unique entries
-    patharr = Array.from(new Set(patharr)); 
-
+    var patharrtmp = patharr;
+    patharr = patharrtmp.sort().filter(function(item, pos, ary) {
+        return !pos || item != ary[pos - 1];
+    });
 
     for (p in patharr) {
         dest = patharr[p];
