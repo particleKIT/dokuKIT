@@ -1,7 +1,9 @@
-DokuCMS template for Dokuwiki
-Copyright (C) 2008-2013 Klaus Vormweg
+DokuKIT template for Dokuwiki
+based on DokuCMS template for Dokuwiki by Klaus Vormweg
 
-Edited by Martin.Gabelmann@kit.edu 2015
+Developed by
+* Martin Gabelmann <martin.gabelmann@kit.edu>
+* Robin Roth <robin.roth@kit.edu>
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
