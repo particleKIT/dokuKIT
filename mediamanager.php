@@ -1,6 +1,6 @@
 <?php
 /**
- * DokuCMS Template
+ * DokuKIT Template
  *
  * This is the template for the media manager popup
  *

@@ -1,6 +1,6 @@
 <?php
 /**
- * configuration-manager metadata for the dokucms template
+ * configuration-manager metadata for the dokukit template
  * 
  * @license:    GPL 2 (http://www.gnu.org/licenses/gpl.html)
  * @author:     Michael Klier <chi@chimeric.de>

@@ -1,6 +1,6 @@
 <?php
 /**
- * DokuWiki Template DokuCMS Functions - adapted from arctic template
+ * DokuWiki Template DokuKIT Functions - adapted from arctic template and dokucms
  *
  * @license GPL 2 (http://www.gnu.org/licenses/gpl.html)
  * @author Andreas Gohr <andi@splitbrain.org>

@@ -1,6 +1,6 @@
 <?php
 /**
- * DokuWiki Dokucms Template
+ * DokuWiki DokuKIT Template
  *
  * This is the template for displaying image details
  *
