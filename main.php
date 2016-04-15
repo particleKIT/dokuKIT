@@ -64,8 +64,8 @@ echo '
 
     <div id="head">
         <div id="logo">
-            <a href="https://www.kit.edu" title="'.$lang['kitlogo'].'">
-                <img src="'.DOKU_URL.'/lib/tpl/dokukit/images/logo_'.$conf['lang'].'_163.jpg" alt="'.$lang['kitlogo'].'">
+            <a href="https://www.kit.edu" title="'.tpl_getLang('kitlogo').'">
+                <img src="'.DOKU_URL.'/lib/tpl/dokukit/images/logo_'.$conf['lang'].'_163.jpg" alt="'.tpl_getLang('kitlogo').'">
             </a>
         </div>
         <div id="head-image" >
@@ -172,7 +172,7 @@ if($ACT != 'diff' && $ACT != 'edit' && $ACT != 'preview' && $ACT != 'admin' && $
   _tpl_pageinfo();
 }
 echo '                   </span>
-                         <span id="owner-text">'.$lang['kitfooter'].'</span>
+                         <span id="owner-text">'.tpl_getLang('kitfooter').'</span>
                     </div>
 ';
 
