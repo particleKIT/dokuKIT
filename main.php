@@ -75,25 +75,6 @@ echo '      </div>
 
     <div class="spacer"></div>
 ';
-
-#if($conf['breadcrumbs']){
-#  echo '    <div class="breadcrumbs">
-#';
-#  tpl_breadcrumbs();
-#  echo '  </div>
-#';
-#}
-
-#if($conf['youarehere']){
-#  echo '    <div class="breadcrumbs">
-#';
-#  tpl_youarehere();
-#  echo '    </div>
-#';
-#}
-#echo '
-#  </header>
-#';
 tpl_flush();
 
 if($ACT != 'diff' && $ACT != 'edit' && $ACT != 'preview' && $ACT != 'admin' && $ACT != 'login' && $ACT != 'logout' && $ACT != 'profile' && $ACT != 'revisions' && $ACT != 'media') {
