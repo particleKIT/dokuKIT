@@ -515,7 +515,12 @@ form br {
     list-style-type: none;
 }
 
-#menu-box .dynamic .curid {
+#menu-box .dynamic li.level4 .curid a.wikilink2,
+#menu-box .dynamic li.level4 .curid a.wikilink1,
+#menu-box .dynamic li.level3 .curid a.wikilink2,
+#menu-box .dynamic li.level3 .curid a.wikilink1,
+#menu-box .dynamic li.level2 .curid a.wikilink2,
+#menu-box .dynamic li.level2 .curid a.wikilink1 {
     text-decoration: none;
     font-weight: 700 !important;
 }
