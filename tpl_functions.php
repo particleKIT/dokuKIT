@@ -25,12 +25,16 @@ function _tpl_sidebar() {
     $pname = 'sidebar';
     $tpl = $conf['template'];
 
+    // print static sidebar from wiki page(s)
     if($conf['tpl'][$tpl]['sidebar']== 'file')  {
+        // search for sidebar files recursively starting in the current namespace
         $ns_sb = _getNsSb($ID);
+        // print sidebar of the current namespace
         if($ns_sb && auth_quickaclcheck($ns_sb) >= AUTH_READ) {
             echo '<div class="sidebar_box file">', DOKU_LF;
             echo p_sidebar_xhtml($ns_sb), DOKU_LF;
             echo '</div>', DOKU_LF;
+         // print sidebar from top root namespace 
          } elseif(@file_exists(wikiFN($pname)) && auth_quickaclcheck($pname) >= AUTH_READ) {
             echo '<div class="sidebar_box file">', DOKU_LF;
             echo p_sidebar_xhtml($pname), DOKU_LF;
@@ -40,12 +44,14 @@ function _tpl_sidebar() {
             echo '&nbsp;', DOKU_LF;
             echo '</div>', DOKU_LF;
         }
+    // load sidebar from index
 	} else {
         echo '<div class="sidebar_box dynamic">', DOKU_LF;
         echo '  ', p_index_xhtml($ID), DOKU_LF;
         echo '</div>', DOKU_LF;
 	 }
-   
+
+    // load wiki sidebar file containing external links/additional content 
     if(
         $conf['tpl'][$tpl]['showextlinks']== '1' && 
         @file_exists(wikiFN($conf['tpl'][$tpl]['extlinks'])) && 
