@@ -12,14 +12,18 @@ if (!defined('DOKU_INC')) die();
 // include custom template functions stolen from arctic template
 require_once(dirname(__FILE__).'/tpl_functions.php');
 
+// load translation plugin (if present)
+$translation = plugin_load('helper','translation');
+
 echo '
 <!DOCTYPE html>
 <html lang="', $conf['lang'], '" dir="', $lang['direction'], '">
 <head>
   <meta charset="utf-8" />
   <title>
-', $conf["tpl"]["dokukit"]["title_prefix"];
-echo preg_replace('/^en:/','',tpl_pagetitle(null, true));
+  ', $conf["tpl"]["dokukit"]["title_prefix"];
+// print title without language namespace
+echo preg_replace('/^'.$conf['lang'].':/','',tpl_pagetitle(null, true));
 echo '
   </title>
 ';
@@ -42,16 +46,12 @@ echo '
         <div id="metanavigation">';
 tpl_link(wl(),'HOME','name="dokuwiki__top" id="dokuwiki__top"');
 tpl_link('https://www.kit.edu/impressum.php', tpl_getLang('imprint'));
-// tpl_link(DOKU_URL.'imprint', tpl_getLang('imprint'));
-// tpl_link(DOKU_URL.'sitemap', 'SITEMAP');
 tpl_link('https://www.kit.edu/', 'KIT');
 
-$translation = plugin_load('helper','translation');
 if ($translation) { 
     echo $translation->showTranslations();
     $conf['title'] =  $conf["tpl"]["dokukit"]["institute_".$conf['lang']];
 }
-
 
 tpl_button('admin');
 if($_SERVER['REMOTE_USER']) tpl_button('profile');
