@@ -1,4 +1,6 @@
-DokuCMS Template for DokuWiki
+DokuKIT Template for DokuWiki
+ 
+This is a clone of the DokuCMS template by Klaus Vormweg
 
 All documentation for the Template is available online at:
  http://www.tuhh.de/~psvkv/dokucms/index.html
@@ -7,4 +9,3 @@ All documentation for the Template is available online at:
 (c) 2008 - 2015 by Klaus Vormweg <klaus.vormweg@gmx.de>
 See COPYING for license info.
 
-Edited by Martin.Gabelmann@kit.edu

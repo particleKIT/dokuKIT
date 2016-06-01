@@ -1,11 +1,13 @@
 <?php
 /**
- * DokuWiki Template DokuCMS Functions - adapted from arctic template
+ * DokuWiki Template DokuKIT Functions - adapted from DokuCMS template
  *
  * @license GPL 2 (http://www.gnu.org/licenses/gpl.html)
  * @author Andreas Gohr <andi@splitbrain.org>
  * @author  Michael Klier <chi@chimeric.de>
  * @author Klaus Vormweg <klaus.vormweg@gmx.de>
+ * @author Robin Roth <robin.roth@kit.edu>
+ * @author Martin Gabelmann <martin@gabelmann.biz>
  */
 
 // must be run from within DokuWiki
