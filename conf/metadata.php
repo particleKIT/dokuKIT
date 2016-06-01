@@ -5,6 +5,8 @@
  * @license:    GPL 2 (http://www.gnu.org/licenses/gpl.html)
  * @author:     Michael Klier <chi@chimeric.de>
  * @author Klaus Vormweg <klaus.vormweg@gmx.de>
+ * @author Robin Roth <robin.roth@kit.edu>
+ * @author Martin Gabelmann <martin@gabelmann.biz>
  */
 
 $meta['sidebar'] = array('multichoice', '_choices' => array('file', 'index'));
