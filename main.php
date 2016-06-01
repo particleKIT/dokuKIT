@@ -30,11 +30,6 @@ echo '
 tpl_metaheaders();
 echo tpl_favicon(array('favicon', 'mobile'));
 echo '
-<!--[if lt IE 7]>
-   <style type="text/css">
-      div.page { width: 55em !important; }
-   </style>
-<![endif]-->
 </head>
 
 <body>
