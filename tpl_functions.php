@@ -29,15 +29,9 @@ function _tpl_sidebar() {
     if($conf['tpl'][$tpl]['sidebar']== 'file')  {
         // search for sidebar files recursively starting in the current namespace
         $ns_sb = _getNsSb($ID);
-        // print sidebar of the current namespace
         if($ns_sb && auth_quickaclcheck($ns_sb) >= AUTH_READ) {
             echo '<div class="sidebar_box file">', DOKU_LF;
             echo p_sidebar_xhtml($ns_sb), DOKU_LF;
-            echo '</div>', DOKU_LF;
-         // print sidebar from top root namespace 
-         } elseif(@file_exists(wikiFN($pname)) && auth_quickaclcheck($pname) >= AUTH_READ) {
-            echo '<div class="sidebar_box file">', DOKU_LF;
-            echo p_sidebar_xhtml($pname), DOKU_LF;
             echo '</div>', DOKU_LF;
         } else {
             echo '<div class="sidebar_box">', DOKU_LF;
@@ -107,7 +101,7 @@ function _getNsSb($id, $pname = 'sidebar') {
     $ns_sb = '';
     $path  = explode(':', $id);
     
-    while(count($path) > 0) {
+    while(count($path) >= 0) {
         $ns_sb = implode(':', $path).':'.$pname;
         if(@file_exists(wikiFN($ns_sb))) return $ns_sb;
         array_pop($path);
