@@ -45,7 +45,7 @@ tpl_link('https://www.kit.edu/', 'KIT');
 
 if ($translation) { 
     echo $translation->showTranslations();
-    $conf['title'] =  $conf["tpl"]["dokukit"]["institute_".$conf['lang']];
+    if(isset($conf["tpl"]["dokukit"]["institute_".$conf['lang']])) $conf[title] = $conf["tpl"]["dokukit"]["institute_".$conf['lang']];
 }
 
 tpl_button('admin');
