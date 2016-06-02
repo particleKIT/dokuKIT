@@ -104,9 +104,9 @@ function _getNsSb($id, $pname = 'sidebar') {
     while(count($path) > 0) {
         $ns_sb = implode(':', $path).':'.$pname;
         if(@file_exists(wikiFN($ns_sb))) return $ns_sb;
-        if(@file_exists(wikiFN($pname))) return $pname;
         array_pop($path);
     }
+    if(@file_exists(wikiFN($pname))) return $pname;
     
     // nothing found
     return false;
@@ -146,7 +146,7 @@ function p_index_xhtml($ns) {
     
     $ns  = wikiFN($ns);
     
-   $data = array();
+    $data = array();
     search($data,$conf['datadir'],'search_index',array('ns' => $ns));
     $i = 0;
     $cleanindexlist = array();
