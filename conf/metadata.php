@@ -13,7 +13,6 @@ $meta['sidebar'] = array('multichoice', '_choices' => array('file', 'index'));
 $meta['cleanindex'] = array('onoff');
 $meta['cleanindexlist'] = array('string');
 $meta['showsearch'] = array('onoff');
-$meta['showmedia'] = array('onoff');
 $meta['sidebaredit'] = array('onoff');
 $meta['showextlinks'] = array('onoff'); 
 $meta['extlinks'] = array('string'); 

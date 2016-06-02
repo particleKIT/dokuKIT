@@ -13,7 +13,6 @@ $conf['tpl']['dokukit']['sidebar'] = 'index';  // 'file' or 'index'
 $conf['tpl']['dokukit']['cleanindex'] = 0;  // 1 or 0
 $conf['tpl']['dokukit']['cleanindexlist'] = '';  // empty or comma-separated list of namespaces
 $conf['tpl']['dokukit']['showsearch'] = 1;  // 1 or 0
-$conf['tpl']['dokukit']['showmedia'] = 0;  // 1 or 0
 $conf['tpl']['dokukit']['sidebaredit'] = 1; // 1 or 0 
 $conf['tpl']['dokukit']['showextlinks'] = 1; // 1 or 0 
 $conf['tpl']['dokukit']['extlinks'] = 'extlinks'; //filename 
