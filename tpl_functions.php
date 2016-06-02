@@ -141,21 +141,11 @@ function p_index_xhtml($ns) {
     global $ID;
     $dir = $conf['datadir'];
     $tpl = $conf['template'];
-    if(isset($conf['start'])) {
-        $start = $conf['start'];
-    } else {
-        $start = 'start';
-    }
+    $start = isset($conf['start']) ? $conf['start'] : 'start';
     
-    $ns  = cleanID($ns);
-    # fixme use appropriate function
-    if(empty($ns)){
-        $ns = dirname(str_replace(':','/',$ID));
-        if($ns == '.') $ns ='';
-    }
-    $ns  = utf8_encodeFN(str_replace(':','/',$ns));
+    $ns  = wikiFN($ns);
     
-    $data = array();
+   $data = array();
     search($data,$conf['datadir'],'search_index',array('ns' => $ns));
     $i = 0;
     $cleanindexlist = array();
