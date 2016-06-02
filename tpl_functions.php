@@ -170,9 +170,6 @@ function p_index_xhtml($ns) {
     $i = 0;
     foreach($data as $item) {
     if(tpl_getConf('cleanindex')) {
-        if($item['id'] == 'playground' or $item['id'] == 'wiki') {
-            unset($data[$i]);
-        }
         if(count($cleanindexlist)) {
             if(strpos($item['id'], ':')) {
                 list($tmpitem) = explode(':',$item['id']);

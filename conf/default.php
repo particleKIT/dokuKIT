@@ -11,7 +11,7 @@
 
 $conf['sidebar'] = 'index';  // 'file' or 'index'
 $conf['cleanindex'] = 0;  // 1 or 0
-$conf['cleanindexlist'] = '';  // empty or comma-separated list of namespaces
+$conf['cleanindexlist'] = 'wiki,playground';  // empty or comma-separated list of namespaces
 $conf['showsearch'] = 1;  // 1 or 0
 $conf['sidebaredit'] = 1; // 1 or 0 
 $conf['showextlinks'] = 1; // 1 or 0 
