@@ -9,18 +9,18 @@
  * @author Martin Gabelmann <martin@gabelmann.biz>
  */
 
-$conf['tpl']['dokukit']['sidebar'] = 'index';  // 'file' or 'index'
-$conf['tpl']['dokukit']['cleanindex'] = 0;  // 1 or 0
-$conf['tpl']['dokukit']['cleanindexlist'] = '';  // empty or comma-separated list of namespaces
-$conf['tpl']['dokukit']['showsearch'] = 1;  // 1 or 0
-$conf['tpl']['dokukit']['sidebaredit'] = 1; // 1 or 0 
-$conf['tpl']['dokukit']['showextlinks'] = 1; // 1 or 0 
-$conf['tpl']['dokukit']['extlinks'] = 'extlinks'; //filename 
-$conf['tpl']['dokukit']['institute_de'] = "Test Institut"; //german institute name
-$conf['tpl']['dokukit']['institute_en'] = "Test Institute";  //english institute name
-$conf['tpl']['dokukit']['shortinstitute'] = 'TI'; //instituts short name
-$conf['tpl']['dokukit']['title_prefix'] = 'TI - '; //prefix string
-$conf['tpl']['dokukit']['showlogin'] = 1; //show loginbutton
-$conf['tpl']['dokukit']['boxfiles'] = ''; //comma separated list of files
-$conf['tpl']['dokukit']['showboxes'] = 0; //1 or 0
+$conf['sidebar'] = 'index';  // 'file' or 'index'
+$conf['cleanindex'] = 0;  // 1 or 0
+$conf['cleanindexlist'] = '';  // empty or comma-separated list of namespaces
+$conf['showsearch'] = 1;  // 1 or 0
+$conf['sidebaredit'] = 1; // 1 or 0 
+$conf['showextlinks'] = 1; // 1 or 0 
+$conf['extlinks'] = 'extlinks'; //filename 
+$conf['institute_de'] = "Test Institut"; //german institute name
+$conf['institute_en'] = "Test Institute";  //english institute name
+$conf['shortinstitute'] = 'TI'; //instituts short name
+$conf['title_prefix'] = 'TI - '; //prefix string
+$conf['showlogin'] = 1; //show loginbutton
+$conf['boxfiles'] = ''; //comma separated list of files
+$conf['showboxes'] = 0; //1 or 0
 ?>

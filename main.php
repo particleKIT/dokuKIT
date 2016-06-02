@@ -21,7 +21,7 @@ echo '
     <html lang="', $conf['lang'], '" dir="', $lang['direction'], '">
     <head>
     <meta charset="utf-8" />
-    <title>', $conf["tpl"]["dokukit"]["title_prefix"], 
+    <title>', tpl_getConf("title_prefix"), 
 // print title without language namespace
 preg_replace('/^'.$conf['lang'].':/','',tpl_pagetitle(null, true)), '</title>';
 
@@ -41,12 +41,12 @@ tpl_link('https://www.kit.edu/impressum.php', tpl_getLang('imprint'));
 tpl_link('https://www.kit.edu/', 'KIT');
 if ($translation) { 
     echo $translation->showTranslations();
-    if(isset($conf["tpl"]["dokukit"]["institute_".$conf['lang']])) $conf[title] = $conf["tpl"]["dokukit"]["institute_".$conf['lang']];
+    if(null != tpl_getConf("institute_".$conf['lang'])) $conf['title'] = tpl_getConf("institute_".$conf['lang']);
 }
 // various user buttons
 tpl_button('admin');
 if($_SERVER['REMOTE_USER']) tpl_button('profile');
-if($ACT != 'login' && $ACT != 'logout' && $_SERVER['REMOTE_USER'] || $conf["tpl"]["dokukit"]["showlogin"]) tpl_button('login');
+if($ACT != 'login' && $ACT != 'logout' && $_SERVER['REMOTE_USER'] || tpl_getConf("showlogin")) tpl_button('login');
 
 
 echo '
@@ -58,7 +58,7 @@ echo '
     <div id="head-image" >
     <div id="head-text" class="big_font">';
 
-tpl_link(wl(),$conf['title'].' ('. $conf["tpl"]["dokukit"]["shortinstitute"].')' ,'name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]"');
+tpl_link(wl(),$conf['title'].' ('. tpl_getConf("shortinstitute").')' ,'name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]"');
 
 echo '
     </div>
@@ -87,7 +87,7 @@ if(
         <div id="left-row">
         <div id="menu-box">';
     
-    if($conf['tpl']['dokukit']['showsearch']) {  
+   if($conf['tpl']['dokukit']['showsearch']) {  
         echo '<div id="suchen">';
         tpl_searchform();
         echo '</div>';

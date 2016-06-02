@@ -26,7 +26,7 @@ function _tpl_sidebar() {
     $tpl = $conf['template'];
 
     // print static sidebar from wiki page(s)
-    if($conf['tpl'][$tpl]['sidebar']== 'file')  {
+    if(tpl_getConf('sidebar')== 'file')  {
         // search for sidebar files recursively starting in the current namespace
         $ns_sb = _getNsSb($ID);
         if($ns_sb && auth_quickaclcheck($ns_sb) >= AUTH_READ) {
@@ -47,13 +47,13 @@ function _tpl_sidebar() {
 
     // load wiki sidebar file containing external links/additional content 
     if(
-        $conf['tpl'][$tpl]['showextlinks']== '1' && 
-        @file_exists(wikiFN($conf['tpl'][$tpl]['extlinks'])) && 
-        auth_quickaclcheck($conf['tpl'][$tpl]['extlinks']) >= AUTH_READ 
+        tpl_getConf('showextlinks')== '1' && 
+        @file_exists(wikiFN(tpl_getConf('extlinks'))) && 
+        auth_quickaclcheck(tpl_getConf('extlinks')) >= AUTH_READ 
       )  
     {
         echo '<div class="sidebar_box external_sidebar">', DOKU_LF;
-        echo p_sidebar_xhtml($conf['tpl'][$tpl]['extlinks']), DOKU_LF;
+        echo p_sidebar_xhtml(tpl_getConf('extlinks')), DOKU_LF;
         echo '</div>', DOKU_LF;
     }	
 
@@ -121,7 +121,7 @@ function p_sidebar_xhtml($sb) {
     $tpl = $conf['template'];
     $data = p_wiki_xhtml($sb,'',false);
     
-    if(auth_quickaclcheck($sb) >= AUTH_EDIT and $conf['tpl'][$tpl]['sidebaredit']) {
+    if(auth_quickaclcheck($sb) >= AUTH_EDIT and tpl_getConf('sidebaredit')) {
         $data .= '<div class="secedit">'.html_btn('secedit',$sb,'',array('do'=>'edit','rev'=>'','post')).'</div>';
     }
     // strip TOC
@@ -159,8 +159,8 @@ function p_index_xhtml($ns) {
     search($data,$conf['datadir'],'search_index',array('ns' => $ns));
     $i = 0;
     $cleanindexlist = array();
-    if($conf['tpl'][$tpl]['cleanindexlist']) {
-        $cleanindexlist = explode(',', $conf['tpl'][$tpl]['cleanindexlist']);
+    if(tpl_getConf('cleanindexlist')) {
+        $cleanindexlist = explode(',', tpl_getConf('cleanindexlist'));
      	$i = 0;
      	foreach($cleanindexlist as $tmpitem) {
      	    $cleanindexlist[$i] = trim($tmpitem);
@@ -169,7 +169,7 @@ function p_index_xhtml($ns) {
     }
     $i = 0;
     foreach($data as $item) {
-    if($conf['tpl'][$tpl]['cleanindex']) {
+    if(tpl_getConf('cleanindex')) {
         if($item['id'] == 'playground' or $item['id'] == 'wiki') {
             unset($data[$i]);
         }
