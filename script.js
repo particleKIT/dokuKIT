@@ -5,9 +5,10 @@ jQuery(function(){
     baseurl = window.location.protocol + '//' + window.location.hostname;
 
     paths = window.location.pathname.split('/');
-    path1 = paths.slice(0,2).join('/');
-    path2 = paths.slice(0,3).join('/');
-    patharr = [path1, path2];
+    path2 = paths.slice(0,2).join('/');
+    path3 = paths.slice(0,3).join('/');
+    path4 = paths.slice(0,4).join('/');
+    patharr = [path2, path3, path4];
     for (p in patharr) {
         if (patharr[p].substr(-1) === "/") {
             patharr.push(patharr[p]+'start');
