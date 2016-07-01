@@ -825,7 +825,7 @@ div#suchen button {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 943px) and (min-width: 21px) {
+@media (max-width: 943px) and (min-width: 21px) {
     body {
         background: none !important;
     }
@@ -834,6 +834,7 @@ div#suchen button {
       width: auto !important;
             background-image: none !important;
     }
+
     div#head,
     div#left-row,
     div#middle-row,
