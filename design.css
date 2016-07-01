@@ -873,7 +873,54 @@ div#suchen button {
         position: unset !important;
         top: -16px;
     }
+
+    div#logo img{
+    position: relative !important;
+    top: -16px;
+    left: -10px !important;
+    height: 108px !important;
+    width: 204px !important;
+    }
+
+    div#head,
+    div#logo  {
+        position:  relative !important;
+        overflow: hidden !important;
+        height: auto !important;
+    }
+
+    div#left-row,
+    div#middle-row,
+    div#right-row,
+    div#container{
+        display: unset !important;
+    }
+        div.sidebar_box {
+               background-color: #E5E5E5;
+        width: 100% !important;
+    }
+    div.sidebar_box ul {
+              float: left !important;
+        width: 100% !important;
+        height: 100% !important;
+        list-style-type: none !important;
+    }
+
+    div#suchen {
+        float: right !important;
+    }
+
+    div.sidebar_box li {
+        min-width: 160px;
+        display: inline-block !important;
+    }
+    
+    span#owner-text {
+        padding-left: 20px !important;
+      display: block !important;    
+    }
 }
+
 @media print {
     * {
         background:none !important;
