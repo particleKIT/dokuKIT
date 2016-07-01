@@ -825,6 +825,55 @@ div#suchen button {
     cursor: pointer;
 }
 
+@media only screen and (max-width: 943px) and (min-width: 21px) {
+    body {
+        background: none !important;
+    }
+
+    div#wrapper {
+      width: auto !important;
+            background-image: none !important;
+    }
+    div#head,
+    div#left-row,
+    div#middle-row,
+    div#container,
+    div#footer,
+    div#footer-container,
+    div#footer-content,
+    div.spacer,
+    div#metanavigation,
+    div#head-image,
+    div#footer-text,
+    div#owner,
+    div#menu-box{
+        float: none !important;
+        padding: 0 !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    
+    div#content {
+        padding-left: 20px !important;
+        padding-bottom: 70px !important;    
+    }
+    
+    div#footer-container{
+        background: none !important;
+    }
+
+    div#metanavigation {
+        background-color: white;
+    }
+    div#head{
+        padding-top: 8px !important;
+        overflow: hidden !important;
+    }
+    div#head-image{
+        position: unset !important;
+        top: -16px;
+    }
+}
 @media print {
     * {
         background:none !important;
