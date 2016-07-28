@@ -22,8 +22,10 @@ echo '
     <head>
     <meta charset="utf-8" />
     <title>', tpl_getConf("title_prefix"), 
-// print title without language namespace
-preg_replace('/^'.$conf['lang'].':/','',tpl_pagetitle(null, true)), '</title>';
+    // print title without language namespace
+    preg_replace('/^'.$conf['lang'].':/','',tpl_pagetitle(null, true)), '</title>',
+    // set viewport for mobile devices
+    '<meta name="viewport" content="width=device-width, initial-scale=1.0">';
 
 tpl_metaheaders();
 echo tpl_favicon(array('favicon', 'mobile')), '

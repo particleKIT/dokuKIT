@@ -825,26 +825,53 @@ div#suchen button {
     cursor: pointer;
 }
 
-@media (max-width: 943px) and (min-width: 21px) {
+
+@media (max-width: 550px) {
+    div#head {
+        text-align: center;
+    }
+    div#head-image {
+        float: left !important;
+        background: unset !important;
+    }
+    div#head-text {
+        width: 50% !important;
+        margin: 0 !important;
+        overflow: visible !important;
+        text-align: center;
+        padding-left: 5px !important;
+        padding-top: 0;
+    }
+    div#head-image {
+        height: auto !important;
+    }
+    div.big_font {
+        height: auto !important;
+    }
+
+    div#head-text-corner {
+        display: none !important;
+    }
+}
+
+@media (max-width: 943px) {
     body {
         background: none !important;
     }
 
     div#wrapper {
       width: auto !important;
-            background-image: none !important;
+      background-image: none !important;
     }
 
     div#head,
+    div#head-image,
     div#left-row,
     div#middle-row,
-    div#container,
     div#footer,
     div#footer-container,
     div#footer-content,
-    div.spacer,
     div#metanavigation,
-    div#head-image,
     div#footer-text,
     div#owner,
     div#menu-box{
@@ -853,7 +880,15 @@ div#suchen button {
         width: 100% !important;
         margin: 0 !important;
     }
-    
+   
+    div.spacer,
+    div#container {
+        width: 100% !important;
+        float: none !important;
+        margin-left: 0 !important;
+        
+    }
+
     div#content {
         padding-left: 20px !important;
         padding-bottom: 70px !important;    
@@ -864,15 +899,11 @@ div#suchen button {
     }
 
     div#metanavigation {
-        background-color: white;
+        position: relative !important;
     }
-    div#head{
-        padding-top: 8px !important;
-        overflow: hidden !important;
-    }
-    div#head-image{
-        position: unset !important;
-        top: -16px;
+
+    div#head-image {
+        background-position: right !important; 
     }
 
     div#logo img{
@@ -893,15 +924,18 @@ div#suchen button {
     div#left-row,
     div#middle-row,
     div#right-row,
-    div#container{
-        display: unset !important;
+    div#content {
+        display: block !important;
+        padding-bottom: 5px !important;
     }
-        div.sidebar_box {
-               background-color: #E5E5E5;
+    
+    div.sidebar_box {
+        background-color: #E5E5E5;
         width: 100% !important;
     }
+    
     div.sidebar_box ul {
-              float: left !important;
+        float: left !important;
         width: 100% !important;
         height: 100% !important;
         list-style-type: none !important;
