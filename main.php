@@ -67,7 +67,11 @@ echo '
     <div id="head-text-corner">&nbsp;</div>
     </div>
     </div>
-    <div class="spacer"></div>';
+
+    <div id="toggle_space" class="spacer">
+    <span style="display:none;" class="big_font"> show/hide Menu </a>
+    </div>
+    ';
 
 // send output to browser
 tpl_flush();

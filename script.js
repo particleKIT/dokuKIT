@@ -1,3 +1,12 @@
+
+
+function menu_toggle() {
+    jQuery("#toggle_space").on("click", function() {
+         //jQuery("#left-row").slideToggle("slow");
+         jQuery("#left-row").toggle();
+     });
+}
+
 /*
  * set class 'linktocurrent' on all navigation entries that point to the current page
 */
@@ -26,5 +35,8 @@ jQuery(function(){
         linkstocur = jQuery('div.sidebar_box a[href="'+baseurl+dest+'"]');
         linkstocur.parents('li').addClass('linktocurrent');
     }
+
+    menu_toggle();
+    jQuery(window).resize(menu_toggle);
 
 });
