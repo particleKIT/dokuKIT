@@ -2,8 +2,7 @@
 
 function menu_toggle() {
     jQuery("#toggle_space").on("click", function() {
-         //jQuery("#left-row").slideToggle("slow");
-         jQuery("#left-row").toggle();
+         jQuery("#left-row").slideToggle("slow");
      });
 }
 
