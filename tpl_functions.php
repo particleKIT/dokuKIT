@@ -160,29 +160,29 @@ function p_index_xhtml($ns) {
     }
     $i = 0;
     foreach($data as $item) {
-    if(tpl_getConf('cleanindex')) {
-        if(count($cleanindexlist)) {
-            if(strpos($item['id'], ':')) {
-                list($tmpitem) = explode(':',$item['id']);
-            } else {
-            	$tmpitem = $item['id'];
-            }
-            if(in_array($tmpitem, $cleanindexlist)) {
-              unset($data[$i]);
+        if(tpl_getConf('cleanindex')) {
+            if(count($cleanindexlist)) {
+                if(strpos($item['id'], ':')) {
+                    list($tmpitem) = explode(':',$item['id']);
+                } else {
+                	$tmpitem = $item['id'];
+                }
+                if(in_array($tmpitem, $cleanindexlist)) {
+                  unset($data[$i]);
+                }
             }
         }
-    }
-    if(
-        $item['id'] == 'sidebar' or 
-        $item['id'] == $start or
-        preg_match('/:'.$start.'$/',$item['id']) or 
-        !empty($conf['hidepages']) and preg_match('/'.$conf['hidepages'].'$/',$item['id']) or
-        $item['id'] == $conf['tpl']['dokukit']['extlinks']
-    ) {
-        unset($data[$i]);
-      }
-      $i++;
-      
+        if(
+            $item['id'] == 'sidebar' or 
+            $item['id'] == $start or
+            preg_match('/:'.$start.'$/',$item['id']) or 
+            !empty($conf['hidepages']) and preg_match('/'.$conf['hidepages'].'$/',$item['id']) or
+            $item['id'] == $conf['tpl']['dokukit']['extlinks']
+        ) {
+            unset($data[$i]);
+          }
+          $i++;
+          
     }  
     # echo index with empty items removed  
     echo html_buildlist($data,'idx','_html_list_index','html_li_index');
