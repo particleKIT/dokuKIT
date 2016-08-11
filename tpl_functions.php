@@ -144,7 +144,7 @@ function p_index_xhtml($ns) {
     $tpl = $conf['template'];
     $start = isset($conf['start']) ? $conf['start'] : 'start';
     
-    $ns  = wikiFN($ns);
+    $ns  = getNS($ns);
     
     $data = array();
     search($data,$conf['datadir'],'search_index',array('ns' => $ns));
