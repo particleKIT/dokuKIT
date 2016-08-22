@@ -1,8 +1,9 @@
 
 
 function menu_toggle() {
-    jQuery("#toggle_space").on("click", function() {
+    jQuery("#toggle_space").on("click touchstart", function(e) {
          jQuery("#left-row").slideToggle("slow");
+         e.preventDefault();
      });
 }
 
