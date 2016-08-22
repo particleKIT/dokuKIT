@@ -1,16 +1,9 @@
 
-
-function menu_toggle() {
-    jQuery("#toggle_space").on("click touchstart", function(e) {
-         jQuery("#left-row").slideToggle("slow");
-         e.preventDefault();
-     });
-}
-
-/*
- * set class 'linktocurrent' on all navigation entries that point to the current page
-*/
 jQuery(function(){
+
+    /*
+     * set class 'linktocurrent' on all navigation entries that point to the current page
+    */
     baseurl = window.location.protocol + '//' + window.location.hostname;
 
     paths = window.location.pathname.split('/');
@@ -35,8 +28,15 @@ jQuery(function(){
         linkstocur = jQuery('div.sidebar_box a[href="'+baseurl+dest+'"]');
         linkstocur.parents('li').addClass('linktocurrent');
     }
+ 
+    /*
+     * toggle the menu onclick in mobile view
+    */
+  
+    jQuery("#toggle_space").on("click touchstart", function(e) {
+         jQuery("#left-row").slideToggle("slow");
+         e.preventDefault();
+    });
 
-    menu_toggle();
-    jQuery(window).resize(menu_toggle);
 
 });
