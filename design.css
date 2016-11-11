@@ -178,8 +178,8 @@ div#metanavigation .btn_logout button {
 }
 
 div#metanavigation a + a:before,
-div#metanavigation .btn_admin button:before, 
-div#metanavigation .btn_profile button:before, 
+div#metanavigation .btn_admin button:before,
+div#metanavigation .btn_profile button:before,
 div#metanavigation .btn_login button:before,
 div#metanavigation .btn_logout button:before {
     color: #4D4D4D;
@@ -206,7 +206,7 @@ div#logo {
 }
 
 div#head-image {
-    background:__imgblend__ 0 0 no-repeat; 
+    background:__imgblend__ 0 0 no-repeat;
     float:left;
     height:108px;
     width:811px;
@@ -533,7 +533,7 @@ form br {
     display: block;
 }
 
-#menu-box .dynamic ul.idx li.open div.li a.wikilink2, 
+#menu-box .dynamic ul.idx li.open div.li a.wikilink2,
 #menu-box .dynamic ul.idx li.open div.li a.wikilink1 {
     font-weight: 700;
     color: #ffffff;
@@ -544,7 +544,7 @@ form br {
     background-position: 6px 8px;
 }
 
-#menu-box .dynamic ul.idx li.closed div.li a.wikilink2, 
+#menu-box .dynamic ul.idx li.closed div.li a.wikilink2,
 #menu-box .dynamic ul.idx li.closed div.li a.wikilink1 {
     color:#808080;
     background-color: #ffffff;
@@ -553,11 +553,11 @@ form br {
     background-repeat: no-repeat;
     background-position: 6px 8px;
 }
-#menu-box .dynamic li.level4 a.wikilink2, 
-#menu-box .dynamic li.level4 a.wikilink1, 
-#menu-box .dynamic li.level3 a.wikilink2, 
-#menu-box .dynamic li.level3 a.wikilink1, 
-#menu-box .dynamic li.level2 a.wikilink2, 
+#menu-box .dynamic li.level4 a.wikilink2,
+#menu-box .dynamic li.level4 a.wikilink1,
+#menu-box .dynamic li.level3 a.wikilink2,
+#menu-box .dynamic li.level3 a.wikilink1,
+#menu-box .dynamic li.level2 a.wikilink2,
 #menu-box .dynamic li.level2 a.wikilink1 {
     font-weight:100 !important;
     color: #000 !important;
@@ -565,7 +565,7 @@ form br {
     background-color: #D9EFEC !important;
 }
 
-#menu-box .dynamic .open, 
+#menu-box .dynamic .open,
 #menu-box .dynamic .closed,
 #menu-box .dynamic .level1 {
     background-image: url(images/left_navi_V2.gif);
@@ -593,7 +593,7 @@ form br {
 }
 
 
-#menu-box a.wikilink1, 
+#menu-box a.wikilink1,
 #menu-box a.wikilink2,
 #menu-box a.urlextern {
   font-weight:700;
@@ -628,7 +628,7 @@ form br {
     margin-top: 4px;
     border: 2px solid #ffffff;
     background-color: #ffffff;
-    color:#808080; 
+    color:#808080;
     font-weight:700;
 }
 
@@ -713,7 +713,7 @@ form br {
 }
 
 #menu-box .file a {
-    padding: 3px 5px 3px 15px; 
+    padding: 3px 5px 3px 15px;
     display: block;
     margin-top: 4px;
     border: 2px solid white;
@@ -727,8 +727,8 @@ form br {
 	color: #ffffff;
 }
 
-#menu-box .file li.level2.linktocurrent div.li a.wikilink2, 
-#menu-box .file li.level2.linktocurrent div.li a.wikilink1 { 
+#menu-box .file li.level2.linktocurrent div.li a.wikilink2,
+#menu-box .file li.level2.linktocurrent div.li a.wikilink1 {
     font-weight: 700;
     background-color:#D9EFEC;
     color: #000000;
@@ -765,24 +765,24 @@ form br {
     background-color:#D9EFEC;
     font-weight: 100 !important;
     color: #000000;
-    padding-bottom: 3px; 
+    padding-bottom: 3px;
     border-right: 2px solid white;
     border-left: 2px solid white;
 }
 
-#menu-box .file .level2 .li a.wikilink1, 
+#menu-box .file .level2 .li a.wikilink1,
 #menu-box .file .level2 .li a.wikilink2,
 #menu-box .file .level2 .li a.urlextern {
   font-weight:400;
   color: #000;
 }
 
-#menu-box .file .level1 ul { 
+#menu-box .file .level1 ul {
     background-color:#D9EFEC;
 }
 
-#menu-box .file .node > .li { 
-    padding-bottom: 0px; 
+#menu-box .file .node > .li {
+    padding-bottom: 0px;
     background-image: none;
     border-bottom: 2px solid white;
 }
@@ -868,7 +868,7 @@ div#suchen .ajax_qsearch {
       background-image: none !important;
       left: 0 !important;
     }
-    
+
     div#head,
     div#head-image,
     div#left-row,
@@ -885,7 +885,7 @@ div#suchen .ajax_qsearch {
         width: 100% !important;
         margin: 0 !important;
     }
-   
+
     div.spacer,
     div#container {
         width: 100% !important;
@@ -896,9 +896,9 @@ div#suchen .ajax_qsearch {
 
     div#content {
         padding: 0px !important;
-        padding-bottom: 70px !important;    
+        padding-bottom: 70px !important;
     }
-    
+
     div#footer-container{
         background: none !important;
     }
@@ -912,7 +912,7 @@ div#suchen .ajax_qsearch {
     }
 
     div#head-image {
-        background-position: right !important; 
+        background-position: right !important;
     }
 
     div#logo img {
@@ -927,7 +927,7 @@ div#suchen .ajax_qsearch {
         background-size: 100px;
         margin-top: 40px;
     }
-    
+
     div#toggle_space,
     div#toggle_space span {
         display: block !important;
@@ -954,7 +954,7 @@ div#suchen .ajax_qsearch {
         background-color: #E5E5E5;
         width: 100% !important;
     }
-    
+
     div.sidebar_box ul {
         float: left !important;
         width: 100% !important;
@@ -1002,7 +1002,7 @@ div#suchen .ajax_qsearch {
     }
     span#owner-text {
         padding-left: 0 !important;
-        display: block !important;    
+        display: block !important;
     }
 }
 
@@ -1440,12 +1440,12 @@ code {
 /* --------- buttons ------------------- */
 
 /* metanavigation integration */
-.btn_admin button, 
-.btn_profile button, 
-.btn_login button, 
+.btn_admin button,
+.btn_profile button,
+.btn_login button,
 .btn_logout button  {
     background:none!important;
-    border:none; 
+    border:none;
     padding:0!important;
     font: inherit;
     cursor: pointer;
@@ -1509,7 +1509,7 @@ div.hiddenBody {
     padding: 0px;
 }
 
-div.hiddenGlobal:not(.hiddenHidden) > div.hiddenHead p::after, 
+div.hiddenGlobal:not(.hiddenHidden) > div.hiddenHead p::after,
 div.hiddenGlobal.hiddenHidden > div.hiddenHead p::after {
     background-image: none !important;
 }
@@ -1522,7 +1522,7 @@ div.hiddenGlobal.hiddenHidden > div.hiddenHead p::before {
     background-image: url("/lib/plugins/hidden/images/enlarge2.png");
 }
 
-div.hiddenHead p::before, 
+div.hiddenHead p::before,
 div.hiddenHead p::before {
     display: inline-block;
     background-size: 1.2em 1.2em;
