@@ -60,7 +60,13 @@ echo '
     <div id="head-image" >
     <div id="head-text" class="big_font">';
 
-tpl_link(wl(),$conf['title'].' ('. tpl_getConf("shortinstitute").')' ,'name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]"');
+    $title = $conf['title'];
+    $short_institute = tpl_getConf('shortnstitute');
+    if ($short_institute) {
+    	$title .= ' ('.$short_institute.')';
+    }
+
+tpl_link(wl(), $title, 'name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]"');
 
 echo '
     </div>
