@@ -825,6 +825,10 @@ div#suchen button {
     cursor: pointer;
 }
 
+div#suchen .ajax_qsearch {
+    left: 180px;
+}
+
 
 @media (max-width: 550px) {
     div#head {
@@ -966,6 +970,7 @@ div#suchen button {
         margin: 0 !important;
         width: 100% !important;
         padding: 4px 0 0 0;
+        height: auto;
     }
     div#suchen input[type="text"] {
         padding: 0;
@@ -975,6 +980,11 @@ div#suchen button {
 
     div#suchen button {
         width: 20%;
+    }
+
+    div#suchen .ajax_qsearch {
+    	position: static;
+	clear: both;
     }
 
     div.sidebar_box li {
