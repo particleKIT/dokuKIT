@@ -226,7 +226,7 @@ function _tpl_pageinfo(){
     
     // echo it
     if($INFO['exists']){
-        echo $lang['lastmod'], ': ', $date;
+        echo $lang['lastmod'], ' ', $date;
         if($_SERVER['REMOTE_USER']) {
             if($INFO['editor']) {
                 echo ' ', $lang['by'], ' ', $INFO['editor'];
