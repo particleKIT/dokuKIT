@@ -598,7 +598,7 @@ form br {
 #menu-box a.urlextern {
   font-weight:700;
   color: #808080;
-  /* text-decoration: none !important; */
+  text-decoration: none;
   border-bottom: none !important;
 }
 
