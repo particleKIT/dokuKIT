@@ -602,6 +602,12 @@ form br {
   border-bottom: none !important;
 }
 
+#menu-box a.wikilink1:hover,
+#menu-box a.wikilink2:hover,
+#menu-box a.urlextern:hover {
+  text-decoration: underline;
+}
+
 #menu-box .dynamic .li_level_1_selected_no_children {
     padding-bottom: 5px;
     background-image: url(images/left_navi_V2.gif);
