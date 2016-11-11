@@ -1159,6 +1159,7 @@ div#suchen .ajax_qsearch {
 #dw__toc ul li {
   background: transparent url(images/tocdot2.gif) 0 0.6em no-repeat;
   padding-left: 0.4em;
+  margin-top: 5px;
 }
 
 #dw__toc ul li.clear {
@@ -1302,14 +1303,6 @@ abbr {
   border-bottom: 1px dotted __text__;
 }
 
-
-/* indent different sections */
-div.level1 {margin-left: 0.1em;}
-div.level2 {margin-left: 0.6em;}
-div.level3 {margin-left: 1.1em;}
-div.level4 {margin-left: 1.6em;}
-div.level5 {margin-left: 2.1em;}
-
 /* unordered lists */
 ul {
   list-style-type: square;
@@ -1331,6 +1324,26 @@ li ul,
 li ol {
   margin: 0 0 0 1.5em;
 }
+
+/* space before headings */
+#content h1,
+#content h2,
+#content h3,
+#content h4,
+#content h5,
+#content h6 { margin-top: 1em; }
+
+div.footnotes { margin-top: 5em; }
+
+/* spacing between paragraphs */
+div.table + p, p + div.table,
+blockquote + p, p + blockquote,
+ol + p, p + ol,
+ul + p, p + ul,
+ol + pre, pre + ol,
+ul + pre, pre + ul,
+pre + p, p + pre,
+p + p { margin-top: 1em; }
 
 /* the list items overriding the ul/ol definition */
 .li {
@@ -1356,7 +1369,8 @@ li.closed {
 
 blockquote {
   border-left: 2px solid __border__;
-  padding-left: 3px;
+  margin-left: 2px;
+  padding-left: 1em;
 }
 
 pre,
