@@ -39,10 +39,8 @@ html>/**/body {
 }
 
 /* Farben der allgemeinen Links */
-a:link,a:active,a:visited {
-    color:__existing__;
-    text-decoration:none;
-}
+a:link,a:active,a:visited { color:__existing__; }
+a:active,a:visited { text-decoration:none; }
 a:hover {
     text-decoration:underline;
 }
@@ -1180,10 +1178,8 @@ div#suchen .ajax_qsearch {
 /* --------------- Links ------------------ */
 
 a:link,
-a:visited {
-  color: __existing__;
-  text-decoration: none;
-}
+a:visited { color: __existing__; }
+a:visited { text-decoration: none; }
 a:hover,
 a:active {
   color: __text__;
