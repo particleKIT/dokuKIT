@@ -725,19 +725,12 @@ form br {
     border: 2px solid white;
 }
 
-#menu-box .file li.level1.linktocurrent > .li, #menu-box .file li.level1 > .li .curid a {
+#menu-box .file li.level1 > .li .curid a {
 	background-color: #009682;
 }
 
-#menu-box .file li.level1.linktocurrent > .li a.wikilink1, #menu-box .file li.level1 > .li .curid a {
+#menu-box .file li.level1 > .li .curid a {
 	color: #ffffff;
-}
-
-#menu-box .file li.level2.linktocurrent div.li a.wikilink2,
-#menu-box .file li.level2.linktocurrent div.li a.wikilink1 {
-    font-weight: 700;
-    background-color:#D9EFEC;
-    color: #000000;
 }
 
 #menu-box .file .level1 .li {

@@ -1,9 +1,12 @@
-
 jQuery(function(){
 
     /*
-     * set class 'linktocurrent' on all navigation entries that point to the current page
+     * set class 'curid' on all navigation entries that point to the current page
     */
+
+    // first remove the static curid (from php) which is probably out of date due to caching
+    jQuery('.curid').removeClass('curid');
+
     baseurl = window.location.protocol + '//' + window.location.hostname;
 
     paths = window.location.pathname.split('/');
@@ -23,16 +26,17 @@ jQuery(function(){
         return !pos || item != ary[pos - 1];
     });
 
+	// wrap with curid-span as php would do
     for (p in patharr) {
         dest = patharr[p];
         linkstocur = jQuery('div.sidebar_box a[href="'+baseurl+dest+'"]');
-        linkstocur.parents('li').addClass('linktocurrent');
+        linkstocur.wrap("<span class='curid'></div>");
     }
- 
+
+
     /*
      * toggle the menu onclick in mobile view
     */
-  
     jQuery("#toggle_space").on("click touchstart", function(e) {
          jQuery("#left-row").slideToggle("slow");
          e.preventDefault();
