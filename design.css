@@ -44,11 +44,6 @@ a:active,a:visited { text-decoration:none; }
 a:hover {
     text-decoration:underline;
 }
-/* Link to the current active page -- bold */
-.curid {
-    text-decoration: none;
-    font-weight: 700 !important;
-}
 
 /* Wrapper */
 div#wrapper {
@@ -493,6 +488,11 @@ form br {
 /* LINKE NAVIGATION */
 /* **************** */
 
+/* Link to the current active page -- bold */
+#menu-box span.curid > a {
+    text-decoration: none;
+    font-weight: 700 !important;
+}
 
 /* dynamic navi created from index */
 #menu-box .dynamic {
@@ -511,16 +511,6 @@ form br {
     border: 0;
     padding: 0;
     list-style-type: none;
-}
-
-#menu-box .dynamic li.level4 .curid a.wikilink2,
-#menu-box .dynamic li.level4 .curid a.wikilink1,
-#menu-box .dynamic li.level3 .curid a.wikilink2,
-#menu-box .dynamic li.level3 .curid a.wikilink1,
-#menu-box .dynamic li.level2 .curid a.wikilink2,
-#menu-box .dynamic li.level2 .curid a.wikilink1 {
-    text-decoration: none;
-    font-weight: 700 !important;
 }
 
 #menu-box .dynamic a:hover {
@@ -707,11 +697,6 @@ form br {
     margin: 0;
     border: 0;
     list-style-type: none;
-}
-
-#menu-box .file .curid {
-    text-decoration: none;
-    font-weight: 700 !important;
 }
 
 #menu-box .file a:hover {
