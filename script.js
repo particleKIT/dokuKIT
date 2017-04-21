@@ -4,9 +4,6 @@ jQuery(function(){
      * set class 'curid' on all navigation entries that point to the current page
     */
 
-    // first remove the static curid (from php) which is probably out of date due to caching
-    jQuery('.curid').removeClass('curid');
-
     baseurl = window.location.protocol + '//' + window.location.hostname;
 
     paths = window.location.pathname.split('/');

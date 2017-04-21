@@ -127,6 +127,8 @@ function p_sidebar_xhtml($sb) {
     }
     // strip TOC
     $data = preg_replace('/<div class="toc">.*?(<\/div>\n<\/div>)/s', '', $data);
+    // remove curid - its placed via javascript (caching compatible)
+    $data = preg_replace('/<span class="curid">(.*)<\/span>/', '\1', $data);
     // replace headline ids for XHTML compliance
     $data = preg_replace('/(<h.*?><a.*?id=")(.*?)(">.*?<\/a><\/h.*?>)/','\1sb_left_\2\3', $data);
     return ($data);
