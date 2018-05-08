@@ -1484,8 +1484,12 @@ div.hiddenGlobal {
     border:  thick none !important;
 }
 
-div.hiddenHead {
-    font-weight: bold;
+div.hiddenOnHidden {
+    color: #fff;
+}
+
+div.hiddenOnVisible {
+    color: #fff;
 }
 
 div.hiddenBody {
