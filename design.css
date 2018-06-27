@@ -1555,6 +1555,10 @@ div.hiddenHead p::before {
     padding-left: 3px;
 }
 
+.notify {
+    position: fixed;
+    top: 0;
+}
 
 /* explicitly overwrite translation_plugin style */
 .dokuwiki div.plugin_translation ul li a.wikilink1:link,
