@@ -23,7 +23,6 @@ function _tpl_sidebar() {
     global $ID;
     if(!defined('DOKU_LF')) define('DOKU_LF',"\n");
     $pname = 'sidebar';
-    $tpl = $conf['template'];
 
     // print static sidebar from wiki page(s)
     if(tpl_getConf('sidebar')== 'file')  {
@@ -68,10 +67,10 @@ function _tpl_infobox() {
     global $ID;
     
     if(!defined('DOKU_LF')) define('DOKU_LF',"\n");
-    $boxfiles = explode(',', $conf['tpl']['dokukit']['boxfiles']);
+    $boxfiles = explode(',', tpl_getConf('boxfiles'));
     $infoboxes = array();
     
-    if($ID !=  $conf['start'] && $ID != $conf['lang'].':'.$conf['start'] || !$conf['tpl']['dokukit']['showboxes']) unset($boxfiles);
+    if($ID !=  $conf['start'] && $ID != $conf['lang'].':'.$conf['start'] || !tpl_getConf('showboxes')) unset($boxfiles);
     
     if(count($boxfiles)>0){
         while (list(, $pname) = each($boxfiles)) {
@@ -179,7 +178,7 @@ function p_index_xhtml($ns) {
             $item['id'] == $start or
             preg_match('/:'.$start.'$/',$item['id']) or 
             !empty($conf['hidepages']) and preg_match('/'.$conf['hidepages'].'$/',$item['id']) or
-            $item['id'] == $conf['tpl']['dokukit']['extlinks']
+            $item['id'] == tpl_getConf('extlinks')
         ) {
             unset($data[$i]);
           }

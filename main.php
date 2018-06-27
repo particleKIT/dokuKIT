@@ -99,7 +99,7 @@ if(
         <div id="left-row">
         <div id="menu-box">';
     
-   if($conf['tpl']['dokukit']['showsearch']) {  
+   if(tpl_getConf('showsearch')) {  
         echo '<div id="suchen">';
         tpl_searchform();
         echo '</div>';
