@@ -41,7 +41,8 @@ echo '<div id="metanavigation">';
 tpl_link(wl(),'HOME','name="dokuwiki__top" id="dokuwiki__top"');
 tpl_link('https://www.kit.edu/impressum.php', tpl_getLang('imprint'));
 tpl_link('https://www.kit.edu/', 'KIT');
-if ($translation) { 
+if ($translation) {
+    if(!$_SERVER['REMOTE_USER']) $conf['plugin']['translation']['checkage'] = 0;
     echo $translation->showTranslations();
     if(null != tpl_getConf("institute_".$conf['lang'])) $conf['title'] = tpl_getConf("institute_".$conf['lang']);
 }
