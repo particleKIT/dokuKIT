@@ -7,6 +7,7 @@
  * @author Klaus Vormweg <klaus.vormweg@gmx.de>
  * @author Robin Roth <robin.roth@kit.edu>
  * @author Martin Gabelmann <martin@gabelmann.biz>
+ * @author Konstantin Asteriadis <konstantin.asteriadis@kit.edu>
  */
 
 
@@ -421,6 +422,37 @@ h5 {
 
 /*end labels */
 
+/* bureaucracy plugin */
+
+.dokuwiki form.bureaucracy__plugin fieldset {
+    width: auto;
+    text-align: center;
+}
+
+.dokuwiki form.bureaucracy__plugin label {
+    float: right;
+    width: 100%;
+    text-align: right;
+    font-weight: 700;
+}
+
+.dokuwiki form.bureaucracy__plugin label textarea.edit {
+    width: 50%;
+    float: right;
+    resize: none;
+}
+
+.dokuwiki form.bureaucracy__plugin label.textareafield > span {
+    width: auto;
+}
+
+.dokuwiki form.bureaucracy__plugin label.textareafield {
+    text-align: right;
+}
+
+/* end bureaucracy plugin */
+
+
 
 /* Formulars */
 /* no linebreak after formulars */
@@ -811,7 +843,7 @@ div#suchen .ajax_qsearch {
     left: 180px;
 }
 
-
+/*
 @media (max-width: 550px) {
     div#head {
         text-align: center;
@@ -989,6 +1021,7 @@ div#suchen .ajax_qsearch {
         display: block !important;
     }
 }
+*/
 
 @media print {
     * {
