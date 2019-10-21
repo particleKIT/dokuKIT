@@ -824,7 +824,7 @@ div#suchen .ajax_qsearch {
     left: 180px;
 }
 
-/*
+
 @media (max-width: 550px) {
     div#head {
         text-align: center;
@@ -1002,7 +1002,7 @@ div#suchen .ajax_qsearch {
         display: block !important;
     }
 }
-*/
+
 
 @media print {
     * {
